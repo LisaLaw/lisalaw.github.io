@@ -1,0 +1,148 @@
+html {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+body {
+    background-color: rgb(248, 193, 131);
+    width: 97%;
+    align-self: center;
+    
+    border-radius: 2px;
+    margin-top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+nav {
+    height: 50px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    width: 95%;
+    background-color: #b7410e;
+    align-items: center;
+    border-radius: 7px;
+    margin-top: 15px;
+}
+nav a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    text-emphasis: none;
+    color: black;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+nav a:hover {
+    text-decoration: underline;
+    color: white;
+    transform: scale(1.1);
+    font-weight: bolder;
+}
+nav a:active {
+    background-color: grey;
+    border-radius: 2px;
+}
+.main {
+    height: 550px;
+    background-color: #d56005;
+    width: 85%;
+    box-shadow: -1px 1px 15px #711c1b;
+    border-radius: 10px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.title {
+    font-size: 35px;
+    text-align: left;
+    line-height: 2;
+    color: black;
+    width: 800px;
+    margin-left: 30px;
+    text-shadow: 1px 1px #711c1b;
+    align-self: center;
+} 
+#main-CV {
+    justify-content: space-around;
+    height: auto;
+    margin-top: 100px;
+}
+.main-left {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.img-container {
+    align-self: center;
+    padding-top: 10px;
+}
+img {
+    border-radius: 5px;
+}
+.intro {
+    margin-right: 20px;
+    text-align: justify;
+    margin-top: 30px;
+}
+.main-right {
+    padding: 10px;
+}
+.curriculum {
+    background-color: black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 450px;
+}
+.curriculum p {
+    color: rgb(248, 248, 48);
+    line-height: 1.5;
+    font-size: 13px;
+}
+.punctuation {
+    color: #d56005;
+    font-weight: bold;
+}
+.value {
+    color: white;
+}
+#main-projects {
+    padding: 0;
+    justify-content: space-between;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 20px;
+}
+.project-card {
+    z-index: 1;
+    overflow: hidden;
+    text-decoration: none;
+    color: black;
+    margin-bottom: -10px;
+    position: relative;
+}
+.project-card:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    background: url("complutense.png");
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: -1;
+}
+.presentation {
+    background-color: white;
+    padding-bottom: 20px;
+    margin: 150px 5% 0 5%;
+}
