@@ -7,24 +7,24 @@
         <title>Lisa Law</title>
     </head>
     <body>
-        <nav>
+        <nav><!--navigation set with a tags to link to different parts of the page-->
             <a href="#home">Home</a>
             <a href="#CV">CV</a>
-            <a href="#front-end">Front-end</a>
-            <a href="#back-end">Back-end</a>
-            <a href="#">Skills</a>
-            <a href="#">Certificates</a>
-            <a href="#">About me</a>
-            <a href="#">Contact</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#about">About me</a>
+            <a href="#contact">Contact</a>
         </nav>
-        <div class="main" id="home">
+        <div class="anchor" id="home"></div><!--empty anchor class to put main class into focus-->
+        <div class="main">
             <h1 class="title">
                 Hello and welcome to my webpage! <br>
                 My name is Lisa and here you can find out about all the cool stuff that I do.
             </h1>
         </div>
         <div class="anchor" id="CV"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
-        <div class="main" id="main-CV">
+        <div class="main" id="main-CV"><!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
             <div class="main-left">
                 <div class="img-container">
                     <img src="./profilepic1.png" alt="me">
@@ -50,9 +50,9 @@
                 </div>
             </div>
             <div class="main-right">
-                <div class="curriculum">
-                    <p><span class="punctuation"><span class="punctuation">{</span></span><br>
-                        &emsp;"name" : <span class="value"> "Lisa"</span><span class="punctuation">,</span><br>
+                <div class="curriculum"><!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
+                    <p><span class="punctuation">{</span><br><!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
+                        &emsp;"name" : <span class="value"> "Lisa"</span><span class="punctuation">,</span><br><!--.value to mark the value of the key-value pair in a dictionary in a different color-->
                         &emsp;"last_name" : <span class="value"> "Law"</span><span class="punctuation">,</span><br>
                         &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span><span class="punctuation">,</span><br>
                         &emsp;"phone" : <span class="value"> "0044 7366 40 95 18"</span><span class="punctuation">,</span><br>
@@ -65,13 +65,13 @@
                         &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"since" : <span class="value"> "January 2020"</span><span class="punctuation">,</span> <br>
                         &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
-                        &emsp;&emsp;<span class="punctuation">}</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
                         &emsp;&emsp;<span class="punctuation">{</span><br>
                         &emsp;&emsp;&emsp;"area" : <span class="value"> "Front-end Developer"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2020"</span><span class="punctuation">,</span> <br>
                         &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
-                        &emsp;&emsp;<span class="punctuation">}</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
                         &emsp;&emsp;<span class="punctuation">{</span><br>
                         &emsp;&emsp;&emsp;"area" : <span class="value"> "Secondary Teacher"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"level" : <span class="value"> "Recently Qualified Teacher (RQT)"</span><span class="punctuation">,</span><br>
@@ -81,19 +81,19 @@
                         &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"German"</span><span class="punctuation">,</span><span class="value"> "Spanish"</span><span class="punctuation">,</span><span class="value"> "French"</span><br>
                         &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
-                        &emsp;&emsp;<span class="punctuation">}</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
                         &emsp;&emsp;<span class="punctuation">{</span><br>
                         &emsp;&emsp;&emsp;"area" : <span class="value"> "Project Manager"</span><span class="punctuation">,</span><br>
-                        &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2017"</span><span class="punctuation">,</span> <br>
-                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><br>
-                        &emsp;&emsp;<span class="punctuation">}</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2017"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span class="punctuation">,</span><br>
+                        &emsp;&emsp;<span class="punctuation">},</span><br>
                         &emsp;&emsp;&emsp;"area" : <span class="value"> "Student"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"level" : <br>
                         &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"B.A."</span><span class="punctuation">,</span><span class="value"> "M.A"</span><br>
-                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
+                        &emsp;&emsp;&emsp;&emsp;<span class="punctuation">],</span><br>
                         &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2012"</span><span class="punctuation">,</span> <br>
-                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><br>
+                        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span class="punctuation">,</span><br>
                         &emsp;&emsp;&emsp;"speciality" : <br>
                         &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
                         &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"Computational Linguistics"</span><span class="punctuation">,</span><span class=value> "Education"</span><br>
@@ -105,26 +105,99 @@
                 </div>
             </div>
         </div>
-        
-        <div class="main" id="main-projects">
-            <div class="project">
-                <div class="anchor" id="front-end"></div>
+        <div class="anchor" id="projects"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
+        <div class="main" id="main-projects"><!--id chosen to add features to .main, different from .main-CV-->
+            <div class="front-end">
                 <h1>Front-end</h1>
-                <a href="#" class="project-card">
-                    <div class="presentation">
+                <div class="project">
+                    <a href="#" class="project-card">
                         <h3>Alternative University Webpage</h3>
-                        <p class="status">Archived</p>
-                    </div>
-                </a>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>
+                </div>
             </div>
-            <div class="project">
-                <div class="anchor" id="back-end"></div>
+            <div class="back-end">
                 <h1>Back-end</h1>
-                <a href="#" class="project-card">
-                    <div class="presentation">
+                <div class="project">
+                    <a href="#" class="project-card">
                         <h3>Alternative University Webpage</h3>
-                        <p class="status">Archived</p>
-                    </div>
-                </a>            
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>
+                <div class="project">
+                    <a href="#" class="project-card">
+                        <h3>Alternative University Webpage</h3>
+                        <img src="./complutense.png" alt="UCM">
+                    </a>         
+                </div>  
             </div>
         </div>
+        <div class="anchor" id="skills"></div><!--empty anchor class which puts the main class below in a visible position when clicked on in nav, rather than being half hidden behind nav. -->
+        <div class="main" id="main-skills"><!--id chosen to add features to .main, different from previous main- ids-->
+            <div class="skills-container">
+                <h1>Skills</h1>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/html-5.png" alt="html">
+                    <h4>HTML-5</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/css3.png" alt="css">
+                    <h4>CSS-3</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/javascript.png" alt="js">
+                    <h4>JavaScript</h4>
+                </div>
+                <div class="skills">
+                    <img src="https://img.icons8.com/color/144/000000/python.png" alt="python">
+                    <h4>Python</h4>
+                </div>
+            </div>
+            <div class="certificates-container" id="certificates">
+                <h1>Certificates</h1>
+                <div class="certificate">
+                   <h4>Programming for Everybody<br>(Getting Started with Python)</h4>
+                   <img src="./coursera.png" alt="coursera">
+                </div>
+                <div class="certificate">
+                    <h4>Python Data Structures</h4>
+                    <img src="./coursera.png" alt="coursera">
+                </div>
+                <div class="certificate">
+                    <h4>Using Python to Access Web Data</h4>
+                    <img src="./coursera.png" alt="coursera">
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
