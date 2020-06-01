@@ -9,7 +9,7 @@ html {
 body {
     /*background-color: rgb(166, 151, 247);*/
     /*background-color: rgb(194, 55, 97);*/
-    width: 97%;
+    width: 95%;
     align-self: center;
     border-radius: 2px;
     margin-top: -10px;
@@ -18,30 +18,35 @@ body {
     align-items: center;
 }
 nav {
-    height: 50px;
+    height: 55px;
     position: fixed;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 95%;
-    /*background-color: rgb(34, 34, 70);*/
-    background-color: rgb(194, 55, 97);
-    border: 1px solid black;
+    justify-content: stretch;
     align-items: center;
-    border-radius: 7px;
-    margin-top: 15px;
+    width: 100%;
+    /*background-color: rgb(34, 34, 70);
+    background-color: rgb(194, 55, 97);*/
+    background-color: white;
+    /*border: 1px solid #8f666c;*/
+    align-items: center;
+    /*border-radius: 7px;*/
+    margin-top: 5px;
     z-index: 5;
     /*box-shadow: 1px 1px 3px #86300cd5;*/
-    box-shadow: 1px 1px 3px black;
+    box-shadow: 1px 1px 3px #8f666c;
+    border-bottom: 1px solid #8f666c;
 }
 nav a {
     text-transform: uppercase;
     text-decoration: none;
     text-align: center;
     text-emphasis: none;
-    color: black;
+    color: rgb(194, 55, 97);
     padding: 10px 30px;
     font-weight: bold;
+    font-size: 17px;
+    flex-grow: 1;
 }
 nav a:hover {
     text-decoration: underline;
@@ -57,11 +62,11 @@ nav a:active {
 }
 .main {
     height: 550px;
-    background-color: white;
-    width: 85%;
-    box-shadow: -1px 1px 15px;
+    background-color: #f8f3f2;
+    width: 100%;
+    box-shadow: -1px 1px 5px;
     border-radius: 10px;
-    border: solid 1px black;
+    /*border: solid 1px #8f666c;*/
     margin-top: 90px;
     display: flex;
     flex-direction: row;
@@ -73,7 +78,10 @@ nav a:active {
     border: 15px solid rgb(194, 55, 97);
 }
 #main-strip {
-    margin-left: 150px;
+    margin-left: 200px;
+}
+h1 {
+    color: rgb(172, 82, 109);
 }
 .title {
     font-size: 35px;
@@ -89,12 +97,13 @@ nav a:active {
 #main-CV {
     justify-content: space-around;
     height: auto;
-    margin-top: 100px;
+    margin-top: 30px;
 }
 .main-left {
     display: flex;
     flex-direction: column;
     padding: 10px;
+    margin: 0 45px;
 }
 .img-container {
     align-self: center;
@@ -105,13 +114,14 @@ nav a:active {
     width: 70%;
     align-self: flex-start;
 }
+/*
 .circle {
     background-color:  rgb(194, 55, 97);
     border-radius: 50%;
     height: 60px;
     width: 60px;
     margin: 10px;
-}
+}*/
 #strip-CV {
     margin-left: 10px;
     border: 10px solid rgb(194, 55, 97);
@@ -135,16 +145,17 @@ img {
     width: 450px;
 }
 .curriculum p {
-    color: rgb(248, 248, 48);
+    color: rgb(245, 199, 214);
     line-height: 1.5;
     font-size: 13px;
+    letter-spacing: 1.5px;
 }
 .punctuation {
-    color: rgb(194, 55, 97);
+    color: rgb(155, 38, 75);
     font-weight: bold;
 }
 .value {
-    color: white;
+    color: rgb(253, 232, 240);
 }
 #main-projects {
     padding: 0;
@@ -152,13 +163,14 @@ img {
     display: flex;
     flex-direction: row;
     height: auto;
+    margin-top: 30px;
 }
 .front-end, .back-end {
     margin: 40px 10px;
     max-width: 50%;
 }
 .front-end {
-    border-right: 15px solid rgb(194, 55, 97);;
+    border-right: 1px solid #8f666c;
 }
 .front-end h1, .back-end h1 {
     margin-left: 50px;
@@ -179,8 +191,8 @@ img {
     border-radius: 15px;
     display: flex;
     flex-direction: column;
-    box-shadow: -4px 4px 4px black;
-    border: 1px solid black;
+    box-shadow: -4px 4px 4px slategray;
+    border: 1px solid #8f666c;
 }
 .project-card h3 {
     width: 80%;
@@ -200,12 +212,13 @@ img {
     align-self: center;
     z-index: 1;
     margin: 15px;
-    box-shadow: 0.5px 0.5px 3px black;
+    box-shadow: 0.5px 0.5px 3px;
 }
 #main-skills {
     height: auto;
     flex-wrap: wrap;
     flex-direction: column;
+    margin-top: 30px;
 }
 .skills-container, .certificates-container {
     display: flex;
@@ -214,7 +227,7 @@ img {
     margin: 0 15px;
 }
 .skills-container {
-    border-bottom: rgb(194, 55, 97) solid 5px;
+    border-bottom: #8f666c solid 1px;
     padding: 20px;
 }
 .certificates-container {
@@ -222,8 +235,7 @@ img {
     margin-top: -20px;
 }
 .skills img {
-    background-color: black;
-    padding: 10px;
+    background-color: #8f666c;
     margin-top: 20px;
 }
 h4 {
@@ -236,4 +248,44 @@ h4 {
     align-items: center;
     height: 120px;
     padding: 0 5px;
+}
+#main-experience {
+    /*flex-direction: column;*/
+    height: auto;
+}
+#main-experience h1 {
+    margin: 50px 0 0 50px;
+    width: 300px;
+}
+table {
+    width: 100%;
+    margin: 40px;
+    font-size: 20px;
+    border-radius: 15px;
+    box-shadow: -0.5px -0.5px 5px slategray;
+}
+tr:nth-child(2n){
+    background-color: #e0c4c8;
+}
+tr:nth-child(2n+1) {
+    background-color: #f7ecee;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+th:first-of-type, td:first-of-type {
+    width: 25%;
+}
+th:first-of-type {
+    border-top-left-radius: 15px;
+}
+th:nth-of-type(2) {
+    border-top-right-radius: 15px;
+}
+#last-row td:first-of-type {
+    border-bottom-left-radius: 15px;
+}
+#last-row td:nth-of-type(2) {
+    border-bottom-right-radius: 15px;
 }
