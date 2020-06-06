@@ -178,7 +178,7 @@ img {
     max-width: 50%;
 }
 .front-end {
-    border-right: 1px solid #8f666c;
+    border-right: 2px solid rgb(172, 82, 109);
 }
 .front-end button {
     margin-left: 50px;
