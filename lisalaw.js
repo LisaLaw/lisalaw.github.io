@@ -1,20 +1,39 @@
-let mainNavLinks = document.querySelectorAll('nav a');
-let mainSections = document.querySelectorAll('main');
+//domcontentloaded => html has loaded; in this case is an event. second param is function 
+document.addEventListener('DOMContentLoaded', function() { 
+    initScroll(); // ruft fctn auf
+}) 
 
-let lastId;
-let cur = []
+function getWindowScrollPosition() {
+    return {
+      x: window.pageXOffset || document.documentElement.scrollLeft,
+      y: window.pageYOffset || document.documentElement.scrollTop,
+    };
+}
 
-window.addEventListener('scroll', event => {
-    let fromTop = window.scrollY;
+function initScroll() {
+    document.addEventListener('scroll', function() {
+        let scrollPos = getWindowScrollPosition().y; //herausfinden, wie weit wir von oben weg sind
+        let sections = document.querySelectorAll('.main');
+        
+        sections.forEach(function(section) {
+            let sectionTop = section.getBoundingClientRect().top; //draws invisible Kasten around elem
+            let sectionBottom = section.getBoundingClientRect().bottom;
+            let sectionId = section.id;
+            
+            if (sectionId === 'home') {
+                
+            
 
-    mainNavLinks.forEach(link => {
-        let section = document.querySelectorAll(link.hash);
+            let link = document.querySelector(`nav li a[href="#${sectionId}"]`);
+            
 
-        if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
-            link.classList.add('current');
+            if (sectionTop <= scrollPos && sectionBottom >= scrollPos) {
+                link.classList.add('active');
+            } else {
+                link.classList.remove('active');
             }
-            else {
-                link.classList.remove('current');
-            }
+            console.log(sectionTop, sectionBottom, scrollPos);}
+        });
+        
     });
-});
+}

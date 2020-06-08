@@ -32,16 +32,25 @@ nav {
     box-shadow: 1px 1px 3px #8f666c;
     border-bottom: 1px solid #8f666c;
 }
-nav a {
-    text-transform: uppercase;
-    text-decoration: none;
+nav ul {
+    display: flex;
+    flex-direction: row;
+}
+nav ul li {
+    list-style: none;
     text-align: center;
     text-emphasis: none;
-    color: rgb(194, 55, 97);
+    
     padding: 10px 30px;
     font-weight: bold;
     font-size: 17px;
     flex-grow: 1;
+    text-transform: uppercase;
+}
+nav a {
+    color: rgb(194, 55, 97);
+    text-decoration: none;
+    
 }
 nav a:hover {
     text-decoration: underline;
@@ -49,7 +58,7 @@ nav a:hover {
     transform: scale(1.1);
     font-weight: bolder;
 }
-nav a.current {
+nav a.active {
     background-color: rgb(172, 82, 109);
     border-radius: 2px;
     overflow: hidden;
@@ -89,7 +98,7 @@ h1 {
     text-shadow: 1px 1px ;
     align-self: center;
 } 
-#main-CV {
+.cv {
     justify-content: space-around;
     height: auto;
     margin-top: 30px;
@@ -165,7 +174,7 @@ img {
     /*color: rgb(253, 232, 240);*/
     color: rgb(81, 206, 248);
 }
-#main-projects {
+.projects {
     padding: 0;
     justify-content: space-between;
     display: flex;
@@ -259,21 +268,21 @@ h4 {
     height: 120px;
     padding: 0 5px;
 }
-#main-skills button {
+.skills button {
     margin: 50px;
 }
-#main-experience {
+.experience {
     height: auto;
 }
-#main-experience .main-left {
+.experience .main-left {
     width: 12%;
     justify-content: space-between;
 }
-#main-experience h1 {
+.experience h1 {
     margin-top: 50px;
     width: 300px;
 }
-#main-experience button {
+.experience button {
     margin-bottom: 50px;
 }
 table {
@@ -322,25 +331,25 @@ th:nth-of-type(2) {
 #last-row td:nth-of-type(2) {
     border-bottom-right-radius: 15px;
 }
-#main-contact {
+.contact {
     height: auto;
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 100px;
 }
-#main-contact a:hover {
+.contact a:hover {
     cursor: pointer;
     transform: scale(1.1);
 }
-#main-contact img {
+.contact img {
     width: 50px;
     height: 50px;
     padding: 50px;
 }
-#main-contact img.small {
+.contact img.small {
     width: 80px;
     height: 80px;
 }
-#main-contact button {
+.contact button {
     margin-top: 100px;
 }
