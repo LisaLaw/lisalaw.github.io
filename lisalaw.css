@@ -233,7 +233,7 @@ img {
     margin: 15px;
     box-shadow: 0.5px 0.5px 3px;
 }
-#main-skills {
+.skills {
     height: auto;
     flex-wrap: wrap;
     flex-direction: column;
