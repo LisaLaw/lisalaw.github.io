@@ -1,6 +1,6 @@
 //domcontentloaded => html has loaded; in this case is an event. second param is function 
 document.addEventListener('DOMContentLoaded', function() { 
-    initScroll(); // ruft fctn auf
+    initScroll(); // calls function
 }) 
 
 function getWindowScrollPosition() {
@@ -12,11 +12,11 @@ function getWindowScrollPosition() {
 
 function initScroll() {
     document.addEventListener('scroll', function() {
-        let scrollPos = getWindowScrollPosition().y; //herausfinden, wie weit wir von oben weg sind
+        let scrollPos = getWindowScrollPosition().y; //to find out how far we are from the top
         let sections = document.querySelectorAll('.main');
         
         sections.forEach(function(section) {
-            let sectionTop = section.getBoundingClientRect().top; //draws invisible Kasten around elem
+            let sectionTop = section.getBoundingClientRect().top; //draws invisible box around elem
             let sectionBottom = section.getBoundingClientRect().bottom;
             let sectionId = section.id;
             
