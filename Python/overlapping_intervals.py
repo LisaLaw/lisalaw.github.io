@@ -33,5 +33,6 @@ for iv in iv_list:
     my_list.append(new_iv)
     list_count = list_count + 1
 
-print('final ivs: ', my_list)
+print('for the input list of ', iv_list)
+print('The final ivs are: ', my_list)
 
