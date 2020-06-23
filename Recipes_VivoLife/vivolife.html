@@ -17,62 +17,58 @@
             <p>UK</p>
         </header>
 
-        <nav id="navbar">
-            <span class="nav-left">
-                <a href="#" class="nav-btn" onclick="toggleBtn1()";>
-                    SHOP+
-                </a>                  
-                <a href="#" class="nav-btn" onclick="toggleBtn2()";>
-                    VIVO+
-                </a>
-                <a href="#">
-                    RECIPES
-                </a>
-                <a href="#">
-                    BLOG
-                </a>
-                <a href="#">
-                    UNIVERSITY
-                </a>
-            </span>
-            <span class="nav-cent">
-                VIVO
-            </span>
-            <span class="nav-right">
-                <a href="#">
-                    MY ACCOUNT
-                </a>
-                <a href="#">
-                    BASKET
-                </a>
-            </span>
+        <nav class="navbar">
+            <a href="#" class="toggle-button">
+                <span class="link-bar"></span>
+                <span class="link-bar"></span>
+                <span class="link-bar"></span>
+            </a>
+            <div class="nav-links" id="nav-left">
+                <ul class="outer-list">
+                    <li class="outer-list-item dropdown"><a href="#">shop+</a>
+                        <ul class="inner-list">
+                            <li class="inner-list-item first"><a href="#">all</a></li>
+                            <li class="inner-list-item first"><a href="#">Subscribe & Save</a></li>
+                            <li class="inner-list-item first"><a href="#">perform<br><span class="small">Raw Plant Protein & BCAA</span></a></li>
+                            <li class="inner-list-item first"><a href="#">sustain<br><span class="small">Plant Based BCAA & Coconut Water</span></a></li>
+                            <li class="inner-list-item first"><a href="#">thrive<br><span class="small">Living Multinutrient</span></a></li>
+                            <li class="inner-list-item first"><a href="#">ritual<br><span class="small">Plant Based Protein</span></a></li>
+                            <li class="inner-list-item first"><a href="#">maca<br><span class="small">Passion & Power</span></a></li>
+                            <li class="inner-list-item first"><a href="#">matcha<br><span class="small">Find your Zen</span></a></li>
+                            <li class="inner-list-item first"><a href="#">magic<br><span class="small">Adaptogenic Mushroom Lattes</span></a></li>
+                            <li class="inner-list-item first"><a href="#">O3<br><span class="small">Plant Based Omega 3</span></a></li>
+                            <li class="inner-list-item first"><a href="#">D3 & K2<br><span class="small">Vegan D3 with K2</span></a></li>
+                            <li class="inner-list-item first"><a href="#">B12<br><span class="small">Vegan Vitamin B12</span></a></li>
+                            <li class="inner-list-item first"><a href="#">creatine<br><span class="small">Pure Creatine Monohydrate</span></a></li>
+                            <li class="inner-list-item first"><a href="#">magic coffee<br><span class="small">Ground Coffe with Lion's Mane</span></a></li>
+                            <li class="inner-list-item first"><a href="#">accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-list-item dropdown"><a href="#">vivo+</a>
+                        <ul class="inner-list">
+                            <li class="inner-list-item second"><a href="#">about us</a></li>
+                            <li class="inner-list-item second"><a href="#">out team</a></li>
+                            <li class="inner-list-item second"><a href="#">our planet</a></li>
+                            <li class="inner-list-item second"><a href="#">vganic</a></li>
+                            <li class="inner-list-item second"><a href="#">events</a></li>
+                            <li class="inner-list-item second"><a href="#">refer a friend</a></li>
+                            <li class="inner-list-item second"><a href="#">contact us</a></li>
+                        </ul>
+                    </li>
+                    <li class="outer-list-item"><a href="#">recipes</a></li>
+                    <li class="outer-list-item"><a href="#">blog</a></li>
+                    <li class="outer-list-item"><a href="#">university</a></li>
+                </ul>
+            </div>
+            <div class="nav-links" id="nav-cent">VIVO</div>
+            <div class="nav-links" id="nav-right">
+                <ul class="outer">
+                    <li class="outer"><a href="#">my account</a></li>
+                    <li class="outer"><a href="#">basket</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="second-menu hidden" id="menu_01">
-            <a href="#">ALL</a>
-            <a href="#">SUBSCRIBE & SAVE</a>
-            <a href="#">PERFORM<p class="small">Raw Plant Protein & BCAA</p></a>
-            <a href="#">SUSTAIN<p class="small">Plant Based BCAA & Coconut Water</p></a>
-            <a href="#">THRIVE<p class="small">Living Multinutrient</p></a>
-            <a href="#">RITUAL<p class="small">Plant Based Protein</p></a>
-            <a href="#">MACA<p class="small">Passion & Power</p></a>
-            <a href="#">MATCHA<p class="small">Find your Zen</p></a>
-            <a href="#">MAGIC<p class="small">Adaptogenic Mushroom Lattes</p></a>
-            <a href="#">O3<p class="small">Plant Based Omega 3</p></a>
-            <a href="#">D3 & K2<p class="small">Vegan D3 with K2</p></a>
-            <a href="#">B12<p class="small">Vegan Vitamin B12</p></a>
-            <a href="#">CREATINE<p class="small">Pure Creatine Monohydrate</p></a>
-            <a href="#">MAGIC COFFEE<p class="small">Ground Coffe with Lion's Mane</p></a>
-            <a href="#">ACCESSORIES</a>
-        </div>
-        <div class="second-menu hidden" id="menu_02">
-            <a href="#">ABOUT US</a>
-            <a href="#">OUR TEAM</a>
-            <a href="#">OUR PLANET</a>
-            <a href="#">VGANIC</a>
-            <a href="#">EVENTS</a>
-            <a href="#">REFER A FRIEND</a>
-            <a href="#">CONTACT US</a>
-        </div>
+            
         <div class="slide-container">
             <div class="slide fade current">
                 <img src="bowl.jpg" style="width:100%">

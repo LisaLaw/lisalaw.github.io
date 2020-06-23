@@ -37,81 +37,179 @@ header p {
     margin: 5px;
     top: 5px;
 }
-nav {
+
+.navbar {
     width: 98%;
     right: 1px;
     position: fixed;
     display: flex;
     justify-content: space-between;
-    top: 40px;
     transition: 0.1s;
     padding: 35px 10px;
-    overflow: hidden;
     z-index: 4;
     background-color: white;
+    top: 40px;
+    transition: 0.1s;
 }
-.nav-left, .nav-right {
-    display: flex;
-    flex-direction: row;
-} 
-.nav-left {
-    justify-content: space-between;
-    width: 60%;
-    padding: 15px 10px;
+
+#nav-left {
+    align-self: flex-start;
 }
-.nav-right {
-    justify-content: flex-end;
-    padding: 15px 40px;
-    width: 50%;
+
+#nav-right {
+    align-self: flex-end;
 }
-.nav-cent {
-    font-size: 35px;
+
+.nav-links .outer-list {
+    justify-content: flex-start;
+}
+
+#nav-cent {
+    font-size: 50px;
     font-weight: bolder;
-    width: 40%;
     text-align: center;
 }
-nav a, .nav-btn::before, .nav-btn::after, .nav-btn:focus, .second-menu a {
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar .inner-list {
+    position: absolute;
+    left: 0px;
+    display: none;
+    width: 100%;
+    border-top: solid 1px grey;
+    margin-top: 20px;
+    background-color: white;
+    z-index: 10;
+    padding-bottom: 10px;
+}
+
+.navbar .inner-list.active-dropdown {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar .inner-list.active-dropdown li {
+    display: block;
+    margin-top: 20px;
+}
+
+.navbar .inner-list.active-dropdown li a {
+    text-align: left;
+    line-height: 0.8px;
+    padding: 10px;
+    width: 50px;
+    align-self: flex-start;
+}
+
+.navbar .inner-list.inactive-dropdown {
+    display: none;
+}
+
+.navbar li {
+    list-style: none;
+    display: block;
+    padding: 5px;
+}
+
+.navbar a {
     list-style-type: none;
     text-decoration: none;
     color: black;
-    padding: 5px;
     font-weight: bold;
-    display: inline-block;
+    padding: 15px;
     position: relative;
-    text-align: center;
+    text-transform: uppercase;
+    font-size: 17px;
 }
-nav a:hover, .nav-btn:active, .nav.btn::after {
+
+.navbar li:hover {
     cursor: pointer;
     text-decoration: underline;
 }
-.second-menu {
-    display: none;
-    left: 18px;
-    height: 50px;
-    position: absolute;
-    border-top: grey 1.5px solid;
-    top: 150px;
-    padding: 10px;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    z-index: 5;
-    background-color: white;
-    height: auto;
-    background-color: white;
-    width: 96%;
+
+.navbar .inner-list-item:hover {
+    color: grey;
 }
-.second-menu a {
-    min-width: 120px;
-    padding: 20px 0px;
-    z-index: 10;
-}
-.visible {
-    display: flex;
-}
-p.small {
+
+.small {
     font-size: 10px;
     line-height: 0.5;
+    text-transform: none;
+    padding: inherit;
 }
+
+.toggle-button {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+    width: 30px;
+    right: 12px;
+    z-index: 10;
+    top: 10px;
+    left: 10px;
+}
+
+.link-bar {
+    background-color: black;
+    border-radius: 10px;
+    height: 2.5px;
+    width: 100%;
+    padding: 1px;
+}
+
+@media (max-width: 1000px) {
+    
+    .toggle-button {
+        display: flex;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+    }
+
+    .navbar {
+        flex-direction: column;
+        padding: 0px;
+        top: 10px;
+        right: 10px;
+    }
+
+    #nav-cent {
+        position: absolute;
+    }
+
+    .navbar .outer-list {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #nav-left .outer-list {
+        margin-top: 25px;
+    }
+
+    #nav-right .outer-list {
+        margin-top: -15px;
+    }
+
+    .navbar .outer-list-item {
+        text-align: center;
+        padding-top: 5px;
+        background-color: rgb(177, 176, 176);
+        border: solid 1px white;
+        border-radius: 10px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+
 .slide-container {
     position: relative;
     margin: auto;
