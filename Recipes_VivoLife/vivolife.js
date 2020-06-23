@@ -9,7 +9,6 @@ function scrollFunction() {
         navBar.style.padding = '0px 10px';
         navBar.style.top = '0px';
         dropdownMenu.style.top = '10px';
-        distanceFromTop = document.documentElement.scrollTop;
     }
     else {
         navBar.style.padding = "35px 10px";
