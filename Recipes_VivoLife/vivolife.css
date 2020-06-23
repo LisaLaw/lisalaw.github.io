@@ -87,16 +87,16 @@ header p {
     padding-bottom: 10px;
 }
 
-.navbar .inner-list.active-dropdown {
+.navbar .inner-list .active-dropdown {
     display: flex;
     flex-wrap: wrap;
 }
-.navbar .inner-list.active-dropdown li {
+.navbar .inner-list .active-dropdown li {
     display: block;
     margin-top: 20px;
 }
 
-.navbar .inner-list.active-dropdown li a {
+.navbar .inner-list .active-dropdown li a {
     text-align: left;
     line-height: 0.8px;
     padding: 10px;
@@ -179,11 +179,11 @@ header p {
         top: 10px;
         right: 10px;
     }
-
+    /* possible without?
     #nav-cent {
         position: absolute;
     }
-
+    */
     .navbar .outer-list {
         width: 100%;
         flex-direction: column;
@@ -207,6 +207,34 @@ header p {
 
     .nav-links.active {
         display: flex;
+    }
+
+    .navbar .inner-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        display: none;
+    }
+
+    .inner-list.active {
+        display: flex;
+        flex-direction: column;
+        border-top: none;
+        margin-top: 5px;
+    }
+    
+    .inner-list.active .inner-list-item {
+        text-align: center;
+        padding: 5px 15px;
+        background-color: white;
+        border: solid 1px rgb(177, 176, 176);
+        border-radius: 10px;
+        margin: 2px;
+    }
+
+    .inner-list.active .inner-list-item .small {
+        text-align: center;
     }
 }
 

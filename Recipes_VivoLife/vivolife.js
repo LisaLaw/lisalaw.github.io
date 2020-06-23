@@ -62,6 +62,22 @@ secondDropdownBtn.addEventListener('click', () => { //on click, do the following
     }
 })
 
+//make first dropdown menu responsive to width
+let innerToggleBtnShop = document.getElementsByClassName('toggle')[0];
+let innerLinksShop = document.getElementsByClassName('inner-list')[0];
+
+innerToggleBtnShop.addEventListener('click', () => {
+    innerLinksShop.classList.toggle('active');
+})
+
+//make second dropdown menu responsive to width
+let innerToggleBtnVivo = document.getElementsByClassName('toggle')[1];
+let innerLinksVivo = document.getElementsByClassName('inner-list')[1];
+
+innerToggleBtnVivo.addEventListener('click', () => {
+    innerLinksVivo.classList.toggle('active');
+})
+
 //slideshow
 let slideIndex = 1;
 showSlides(slideIndex);
