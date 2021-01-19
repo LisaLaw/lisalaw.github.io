@@ -1,7 +1,6 @@
 html {
     width: 100%;
     font-family: 'ABeeZee', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-color: white;
     background-color: #f8f3f2;
     display: flex;
     flex-direction: column;
@@ -23,7 +22,6 @@ nav {
     display: flex;
     flex-direction: row;
     justify-content: stretch;
-    align-items: center;
     width: 100%;
     background-color: white;
     align-items: center;
