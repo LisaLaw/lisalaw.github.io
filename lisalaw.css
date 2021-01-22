@@ -231,43 +231,59 @@ img {
     margin: 15px;
     box-shadow: 0.5px 0.5px 3px;
 }
+
 .skills {
-    height: auto;
-    flex-wrap: wrap;
     flex-direction: column;
     margin-top: 30px;
+    justify-content: space-between;
 }
+
 .skills-container, .certificates-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 0 15px;
+    width: 95%;
 }
+
 .skills-container {
-    border-bottom: #8f666c solid 1px;
     padding: 20px;
+    padding-bottom: 8%;
+    justify-content: flex-start;
+    border-bottom: 1px solid rgb(172, 82, 109);
 }
-.certificates-container {
-    padding: 50px 20px;
-    margin-top: -20px;
-}
-.skills img {
-    background-color: #8f666c;
-    margin-top: 20px;
-    max-height: 20px;
-}
-h4 {
-    text-align: center;
-    min-height: 50px;
-}
-.certificate {
+
+.single-skill, .certificate {
     display: flex;
     flex-direction: column;
     align-items: center;
     height: 120px;
     padding: 0 5px;
 }
-.skills button {
+
+.single-skill {
+    width: 30%;
+}
+
+.single-skill img {
+    background-color: #8f666c;
+    margin-top: 20px;
+    max-width: 50%;
+    align-self: center;
+}
+
+.certificates-container {
+    padding: 50px 20px 0px 20px;
+    margin-top: -20px;
+    align-self:flex-start;
+}
+
+h4 {
+    text-align: center;
+    min-height: 50px;
+}
+
+.single-skill button {
     margin: 50px;
 }
 .experience {
