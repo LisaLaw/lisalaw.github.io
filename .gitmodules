@@ -13,6 +13,3 @@
 [submodule "submodules/Calculator"]
 	path = submodules/Calculator
 	url = https://github.com/LisaLaw/JS_Calculator.git
-[submodule "blog/SuquiWrites"]
-	path = blog/SuquiWrites
-	url = https://github.com/LisaLaw/SuquiWrites.git
