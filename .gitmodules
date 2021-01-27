@@ -1,6 +1,3 @@
-[submodule "VivoLife"]
-	path = VivoLife
-	url = https://github.com/LisaLaw/VivoLife.git
 [submodule "submodules/UniversityHomepage"]
 	path = submodules/UniversityHomepage
 	url = https://github.com/LisaLaw/University_Homepage.git
