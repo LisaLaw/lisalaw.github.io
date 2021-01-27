@@ -10,3 +10,6 @@
 [submodule "submodules/Calculator"]
 	path = submodules/Calculator
 	url = https://github.com/LisaLaw/JS_Calculator.git
+[submodule "submodules/VivoLife"]
+	path = submodules/VivoLife
+	url = https://github.com/LisaLaw/VivoLife.git
