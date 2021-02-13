@@ -159,7 +159,7 @@ img {
 }
 .curriculum p {
     /*color: rgb(245, 199, 214);*/
-    color: rgb(241, 57, 115);
+    color: red;
     line-height: 1.5;
     font-size: 13px;
     letter-spacing: 1.5px;
@@ -361,10 +361,22 @@ th:nth-of-type(2) {
     height: 50px;
     padding: 50px;
 }
-.contact img.small {
-    width: 80px;
-    height: 80px;
+.contact img#linkedin {
+    width: 85px;
+    height: 85px;
 }
+
+.contact img#email{
+    width: 70px;
+}
+
 .contact button {
     margin-top: 100px;
+}
+
+footer {
+    margin-top:-10px;
+    border-top: 1px solid rgb(241, 57, 115);
+    width: 50%;
+    text-align: center;
 }
