@@ -176,10 +176,22 @@ img {
     padding: 0;
     justify-content: space-between;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: auto;
     margin-top: 30px;
 }
+
+.line {    
+    border: 1px solid rgb(172, 82, 109);
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.other_projects {
+    display: flex;
+    flex-direction: row;
+}
+
 .front-end, .back-end {
     margin: 40px 10px;
     max-width: 50%;
@@ -190,7 +202,7 @@ img {
 .front-end button {
     margin-left: 50px;
 }
-.front-end h1, .back-end h1 {
+.front-end h1, .back-end h1, .django_projects h1 {
     margin-left: 50px;
 }
 .project {
