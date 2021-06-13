@@ -1,371 +1,388 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="./lisalaw.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ABeeZee">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./lisalaw.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=ABeeZee"
+    />
     <!--Google Fonts Link-->
     <script src="./lisalaw.js"></script>
     <title>Lisa Law</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <nav>
-        <!--navigation set with a tags to link to different parts of the page-->
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#cv" id="cv-link">CV</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#certificates">Certificates</a></li>
-            <li><a href="#about">About me</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li>
-                <a href="www.suqui.pythonanywhere.com" target="_blank">Blog</a>
-            </li>
-        </ul>
+      <!--navigation set with a tags to link to different parts of the page-->
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#cv" id="cv-link">CV</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="www.suqui.pythonanywhere.com" target="_blank">Blog</a>
+        </li>
+      </ul>
     </nav>
-    <div class="main home" id="home">
-        <h1 class="title">
-            Hello and welcome to my webpage! <br>
-            My name is Lisa and here you can find out about all the cool stuff that I do.<br>
-            <span style="font-size: 12px;"><span style="text-decoration: underline;">Note: </span>This webpage is still
-                under construction, please bear with me meanwhile.</span>
-        </h1>
-        <div class="colored-strip" id="main-strip"></div>
-    </div>
-    <div class="main cv" id="cv">
-        <!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
 
-        <div class="main-left">
-
-            <div class="img-container">
-
-                <img src="./profilepic2.jpg" alt="me">
-            </div>
-            <div class="intro">
-                <p>
-                    Hello! My name is Lisa and I am a web developer.<br>
-                    With a background in Linguistics, I started my programming journey at the beginning of 2020<br>
-                    <br>
-                    I had already made the choice to specialize in Computational Linguistics during my B.A in 2017,
-                    when I had the amazing opportunity to spend a year at UCLA, home of Computational Linguistics in the
-                    US.<br>
-                    <br>
-                    But I wasn't ready to make the jump then. Instead, I worked as a Project Manager in translations for
-                    a while
-                    which taught me multitasking and what it's like to work in a fast-paced environment.<br>
-                    Next, I completed a Master's level program in education, a Post Graduate Certificate in Secondary
-                    Foreign Language Teaching (PGCE) and before I knew it, I was working with teenagers. An invaluable
-                    experience which I wouldn't have missed for any price, this taught me patience and looking at a
-                    problem from every point of view.<br>
-                    During this time, I strongly felt a need to create, to develop and to work with challenging,
-                    more analytical tasks.<br>
-                    I felt a calling and I decided to teach myself the art of developing.<br>
-                    <br>
-                    I have some experience teaching myself as I have a love for languages and have previously learned
-                    Spanish and French mostly on my own. I love working on a new language - be it spoken or
-                    computational -,
-                    working out the intrinsic details and underlying logical structures.<br>
-                    <br>
-                    So at the beginning of 2020 I started my Python journey with online courses and have been hooked
-                    every since. I also started refreshing HTML, CSS and JavaScript.<br>
-                    <span style="font-weight: bold;">I am working with Django web apps and developing text clustering
-                        mechanisms.</span><br><br>
-                    If you want to learn more about me and my thoughts, don't forget to check out my blog!
-                </p>
-            </div>
-            <button class="top"><a href="#home">&#129053;</a></button>
-            <!--up arrow-->
-        </div>
-        <div class="main-right">
-            <div class="curriculum">
-                <!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
-                <p><span class="punctuation">{</span><br>
-                    <!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
-                    &emsp;"name" : <span class="value"> "Lisa"</span><span class="punctuation">,</span><br>
-                    <!--.value to mark the value of the key-value pair in a dictionary in a different color-->
-                    &emsp;"last_name" : <span class="value"> "Law"</span><span class="punctuation">,</span><br>
-                    &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;"phone" : <span class="value"> "639 624 915"</span><span class="punctuation">,</span><br>
-                    &emsp;"github" : <span class="value"> "github.io/LisaLaw"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;"experience" : <br>
-                    &emsp;<span class="punctuation">[</span><br>
-                    &emsp;&emsp;<span class="punctuation">{</span><br>
-                    &emsp;&emsp;&emsp;"area" : <span class="value"> "Back-end Developer"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"since" : <span class="value"> "January 2020"</span><span
-                        class="punctuation">,</span> <br>
-                    &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
-                    &emsp;&emsp;<span class="punctuation">},</span><br>
-                    &emsp;&emsp;<span class="punctuation">{</span><br>
-                    &emsp;&emsp;&emsp;"area" : <span class="value"> "Front-end Developer"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"level" : <span class="value"> "Hobbyist"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2020"</span><span class="punctuation">,</span>
-                    <br>
-                    &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span><br>
-                    &emsp;&emsp;<span class="punctuation">},</span><br>
-                    &emsp;&emsp;<span class="punctuation">{</span><br>
-                    &emsp;&emsp;&emsp;"area" : <span class="value"> "Secondary Teacher"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"level" : <span class="value"> "Recently Qualified Teacher (RQT)"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2018"</span><span
-                        class="punctuation">,</span> <br>
-                    &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><br>
-                    &emsp;&emsp;&emsp;"speciality" : <br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"German"</span><span
-                        class="punctuation">,</span><span class="value"> "Spanish"</span><span
-                        class="punctuation">,</span><span class="value"> "French"</span><br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
-                    &emsp;&emsp;<span class="punctuation">},</span><br>
-                    &emsp;&emsp;<span class="punctuation">{</span><br>
-                    &emsp;&emsp;&emsp;"area" : <span class="value"> "Project Manager"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2017"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;<span class="punctuation">},</span><br>
-                    &emsp;&emsp;&emsp;"area" : <span class="value"> "Student"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"level" : <br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"B.A."</span><span
-                        class="punctuation">,</span><span class="value"> "Postgraduate Certificate"</span><br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">],</span><br>
-                    &emsp;&emsp;&emsp;"since" : <span class="value"> "September 2012"</span><span
-                        class="punctuation">,</span> <br>
-                    &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span><span
-                        class="punctuation">,</span><br>
-                    &emsp;&emsp;&emsp;"speciality" : <br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"Computational Linguistics"</span><span
-                        class="punctuation">,</span><span class=value> "Education"</span><br>
-                    &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br>
-                    &emsp;&emsp;<span class="punctuation">}</span><br>
-                    &emsp;<span class="punctuation">]</span><br>
-                    <span class="punctuation">}</span>
-                </p>
-            </div>
-        </div>
+    <!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
+    <div class="curriculum">
+      <!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
+      <p>
+        <span class="punctuation">{</span><br />
+        <!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
+        &emsp;"name" : <span class="value"> "Lisa Law"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;"github" : <span class="value"> "github.io/LisaLaw"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;"experience" : <br />
+        &emsp;<span class="punctuation">[</span><br />
+        &emsp;&emsp;<span class="punctuation">{</span><br />
+        &emsp;&emsp;&emsp;"area" :
+        <span class="value"> "Front-end Developer"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2021"</span
+        ><span class="punctuation">,</span> <br />
+        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
+        ><br />
+        &emsp;&emsp;<span class="punctuation">},</span><br />
+        &emsp;&emsp;<span class="punctuation">{</span><br />
+        &emsp;&emsp;&emsp;"area" :
+        <span class="value"> "Back-end Developer"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"since" : <span class="value"> "January 2020"</span
+        ><span class="punctuation">,</span>
+        <br />
+        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
+        ><br />
+        &emsp;&emsp;<span class="punctuation">},</span><br />
+        &emsp;&emsp;<span class="punctuation">{</span><br />
+        &emsp;&emsp;&emsp;"area" :
+        <span class="value"> "Project Manager"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"since" :
+        <span class="value"> "September 2017"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span
+        ><span class="punctuation">,</span><br />
+        &emsp;&emsp;<span class="punctuation">}</span><br />
+        &emsp;<span class="punctuation">]</span><br />
+        <span class="punctuation">}</span>
+      </p>
+      <div class="img-container">
+        <img src="./profilepic2.jpg" alt="me" />
+      </div>
     </div>
     <div class="main projects" id="projects">
-        <div class="django_projects">
-            <h1>Django Web apps</h1>
-            <div class="project" style="width: 43%;">
-                <a href="./Projects/project_blog.html" class="project-card" target="_blank">
-                    <h3>Personal Blog Page</h3>
-                    <img src="./Screenshots/blog.JPG" alt="Blog">
-                </a>
-            </div>
+      <div class="django_projects">
+        <h1>Django Web apps</h1>
+        <div class="project" style="width: 43%">
+          <a
+            href="./Projects/project_blog.html"
+            class="project-card"
+            target="_blank"
+          >
+            <h3>Personal Blog Page</h3>
+            <img src="./Screenshots/blog.JPG" alt="Blog" />
+          </a>
         </div>
-        <div class="line"></div>
-        <div class="other_projects">
-            <div class="front-end">
-                <h1>Front-end</h1>
-                <div class="project">
-                    <a href="./Projects/project_UCM.html" class="project-card" target="_blank">
-                        <h3>Alternative University Webpage</h3>
-                        <img src="./Screenshots/complutense.png" alt="UCM">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_recipes.html" class="project-card" target="_blank">
-                        <h3>Recipes</h3>
-                        <img src="./Screenshots/recipes_complete.jpg" alt="Recipes">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_gamechangers.html" class="project-card" target="_blank">
-                        <h3>Game Changers Mock Up</h3>
-                        <img src="./Screenshots/gamechangers_complete.jpg" alt="Game Changers">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_calc.html" class="project-card" target="_blank">
-                        <h3>JavaScript Calculator</h3>
-                        <img src="./Screenshots/calculator_complete.jpg" alt="Calculator"
-                            style="height: 350px; width: 250px;">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_Sign_Up.html" class="project-card" target="_blank">
-                        <h3>Sign Up Page</h3>
-                        <img src="./Screenshots/sign_up_complete.jpg" alt="Sign Up">
-                    </a>
-                </div>
-                <button class="top"><a href="#home">&#129053;</a></button>
-                <!--up arrow-->
-            </div>
-            <div class="back-end">
-                <h1>Back-end</h1>
-                <div class="project">
-                    <a href="./Projects/project_nasa_api.html" class="project-card" target="_blank">
-                        <h3>REST API: NASA NeoWs</h3>
-                        <img src="./Screenshots/nasa_api_code.JPG" alt="REST API Code">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_chapters.html" class="project-card" target="_blank">
-                        <h3>Extracting Chapter Titles + Numbers</h3>
-                        <img src="./Screenshots/chapters_code.jpg" alt="Chapters Code">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_web_crawler.html" class="project-card" target="_blank">
-                        <h3>Basic Web Crawler</h3>
-                        <img src="./Screenshots/crawler_complete.jpg" alt="Web Crawler Coder">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_overlap_iv.html" class="project-card" target="_blank">
-                        <h3>Overlapping Intervals</h3>
-                        <img src="./Screenshots/overlap_iv_complete.jpg" alt="Overlapping Intervals">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_duplicates.html" class="project-card" target="_blank">
-                        <h3>Function: Eliminate Duplicates</h3>
-                        <img src="./Screenshots/elim_dup_complete.jpg" alt="Eliminate Duplicates Code">
-                    </a>
-                </div>
-                <div class="project">
-                    <a href="./Projects/project_friday.html" class="project-card" target="_blank">
-                        <h3>Friday 13th</h3>
-                        <img src="./Screenshots/fri_complete.jpg" alt="Friday 13th Code">
-                    </a>
-                </div>
-            </div>
+      </div>
+      <div class="line"></div>
+      <div class="other_projects">
+        <div class="front-end">
+          <h1>Front-end</h1>
+          <div class="project">
+            <a
+              href="./Projects/project_UCM.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Alternative University Webpage</h3>
+              <img src="./Screenshots/complutense.png" alt="UCM" />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_recipes.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Recipes</h3>
+              <img src="./Screenshots/recipes_complete.jpg" alt="Recipes" />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_gamechangers.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Game Changers Mock Up</h3>
+              <img
+                src="./Screenshots/gamechangers_complete.jpg"
+                alt="Game Changers"
+              />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_calc.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>JavaScript Calculator</h3>
+              <img
+                src="./Screenshots/calculator_complete.jpg"
+                alt="Calculator"
+                style="height: 350px; width: 250px"
+              />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_Sign_Up.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Sign Up Page</h3>
+              <img src="./Screenshots/sign_up_complete.jpg" alt="Sign Up" />
+            </a>
+          </div>
+          <button class="top"><a href="#home">&#129053;</a></button>
+          <!--up arrow-->
         </div>
+        <div class="back-end">
+          <h1>Back-end</h1>
+          <div class="project">
+            <a
+              href="./Projects/project_nasa_api.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>REST API: NASA NeoWs</h3>
+              <img src="./Screenshots/nasa_api_code.JPG" alt="REST API Code" />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_chapters.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Extracting Chapter Titles + Numbers</h3>
+              <img src="./Screenshots/chapters_code.jpg" alt="Chapters Code" />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_web_crawler.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Basic Web Crawler</h3>
+              <img
+                src="./Screenshots/crawler_complete.jpg"
+                alt="Web Crawler Coder"
+              />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_overlap_iv.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Overlapping Intervals</h3>
+              <img
+                src="./Screenshots/overlap_iv_complete.jpg"
+                alt="Overlapping Intervals"
+              />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_duplicates.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Function: Eliminate Duplicates</h3>
+              <img
+                src="./Screenshots/elim_dup_complete.jpg"
+                alt="Eliminate Duplicates Code"
+              />
+            </a>
+          </div>
+          <div class="project">
+            <a
+              href="./Projects/project_friday.html"
+              class="project-card"
+              target="_blank"
+            >
+              <h3>Friday 13th</h3>
+              <img
+                src="./Screenshots/fri_complete.jpg"
+                alt="Friday 13th Code"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="main skills">
-        <div class="skills-container" id="skills">
-            <h1>Skills</h1>
-            <div class="single-skill">
-                <img src="https://img.icons8.com/color/144/000000/python.png" alt="python">
-                <h4>Python</h4>
-            </div>
-            <div class="single-skill">
-                <img src="./icon-django.png" alt="django">
-                <h4>Django</h4>
-            </div>
-            <div class="single-skill">
-                <img src="https://img.icons8.com/color/144/000000/html-5.png" alt="html">
-                <h4>HTML-5</h4>
-            </div>
-            <div class="single-skill">
-                <img src="https://img.icons8.com/color/144/000000/css3.png" alt="css">
-                <h4>CSS-3</h4>
-            </div>
-            <div class="single-skill">
-                <img src="https://img.icons8.com/color/144/000000/javascript.png" alt="js">
-                <h4>JavaScript</h4>
-            </div>
+      <div class="skills-container" id="skills">
+        <h1>Skills</h1>
+        <div class="single-skill">
+          <img
+            src="https://img.icons8.com/color/144/000000/python.png"
+            alt="python"
+          />
+          <h4>Python</h4>
         </div>
-        <div class="certificates-container" id="certificates">
-            <h1>Certificates</h1>
-            <div class="certificate">
-                <h4>Programming for Everybody<br>(Getting Started with Python)</h4>
-                <img src="./coursera.png" alt="coursera">
-            </div>
-            <div class="certificate">
-                <h4>Python Data Structures</h4>
-                <img src="./coursera.png" alt="coursera">
-            </div>
-            <div class="certificate">
-                <h4>Using Python to Access Web Data</h4>
-                <img src="./coursera.png" alt="coursera">
-            </div>
+        <div class="single-skill">
+          <img src="./icon-django.png" alt="django" />
+          <h4>Django</h4>
         </div>
-        <button class="top" style="margin:50px;"><a href="#home">&#129053;</a></button>
-        <!--up arrow-->
+        <div class="single-skill">
+          <img
+            src="https://img.icons8.com/color/144/000000/html-5.png"
+            alt="html"
+          />
+          <h4>HTML-5</h4>
+        </div>
+        <div class="single-skill">
+          <img
+            src="https://img.icons8.com/color/144/000000/css3.png"
+            alt="css"
+          />
+          <h4>CSS-3</h4>
+        </div>
+        <div class="single-skill">
+          <img
+            src="https://img.icons8.com/color/144/000000/javascript.png"
+            alt="js"
+          />
+          <h4>JavaScript</h4>
+        </div>
+      </div>
+      <div class="certificates-container" id="certificates">
+        <h1>Certificates</h1>
+        <div class="certificate">
+          <h4>Programming for Everybody<br />(Getting Started with Python)</h4>
+          <img src="./coursera.png" alt="coursera" />
+        </div>
+        <div class="certificate">
+          <h4>Python Data Structures</h4>
+          <img src="./coursera.png" alt="coursera" />
+        </div>
+        <div class="certificate">
+          <h4>Using Python to Access Web Data</h4>
+          <img src="./coursera.png" alt="coursera" />
+        </div>
+      </div>
+      <button class="top" style="margin: 50px">
+        <a href="#home">&#129053;</a>
+      </button>
+      <!--up arrow-->
     </div>
     <div class="main experience" id="about">
-        <div class="main-left">
-            <h1>My Experience</h1>
-            <button class="top"><a href="#home">&#129053;</a></button>
-            <!--up arrow-->
-        </div>
-        <table>
-            <tr>
-                <th>Year</th>
-                <th>Experience</th>
-            </tr>
-            <tr>
-                <td>Sept 2020-...</td>
-                <td>Backend Developer</td>
-            <tr>
-                <td>Jan 2020-...</td>
-                <td>Web Development Self Study</td>
-            </tr>
-            <tr>
-                <td>2019-2020</td>
-                <td>Secondary School Foreign Language Teacher</td>
-            </tr>
-            <tr>
-                <td>2018-2019</td>
-                <td>PGCE (Postgraduate Certificate in Education), Bath Spa University</td>
-            </tr>
-            <tr>
-                <td>2017-2018</td>
-                <td>Project Manager in Translations</td>
-            </tr>
-            <tr>
-                <td>2017</td>
-                <td>Research Assistant (Volunteer): Bilingualism and the Brain</td>
-            </tr>
-            <tr>
-                <td>2017</td>
-                <td>Kitchen Manager</td>
-            </tr>
-            <tr>
-                <td>2016-2017</td>
-                <td>Computational Linguistics, UCLA</td>
-            </tr>
-            <tr>
-                <td>2013-2017</td>
-                <td>B.A. Linguistics and Applied Languages, UCM</td>
-            </tr>
-            <tr>
-                <td>2013-2016</td>
-                <td>Self-employed English and German Teacher</td>
-            </tr>
-            <tr>
-                <td>2015</td>
-                <td>Internship Subtitling / Translations</td>
-            </tr>
-            <tr>
-                <td>2013-2016</td>
-                <td>Summer Camp Monitor: English Immersion</td>
-            </tr>
-            <tr id="last-row">
-                <td>2007-2013</td>
-                <td>Gymnastics Coach (Volunteer)</td>
-            </tr>
-        </table>
-    </div>
-    <div class="main contact" id="contact">
-        <a href="https://github.com/LisaLaw" target="_blank"><img src="./icon-github.png" alt="GitHub"></a>
-        <a href="https://www.linkedin.com/in/lisa-law/" target="_blank"><img src="./icon-linkedin.png" alt="LinkedIn"
-                id="linkedin"></a>
-        <a href="mailto:lisacatlaw@gmail.com" target="_blank"><img src="./icon-email.png" alt="Email" id="email"></a>
-        <a href="tel:0044-7366-40-95-18"><img src="./icon-telephone.jpg" alt="Telephone"></a>
-        <a href="https://twitter.com/mrs_l_law" target="_blank"><img src="./icon-twitter.png" alt="Twitter"></a>
+      <div class="main-left">
+        <h1>My Experience</h1>
         <button class="top"><a href="#home">&#129053;</a></button>
         <!--up arrow-->
+      </div>
+      <table>
+        <tr>
+          <th>Year</th>
+          <th>Experience</th>
+        </tr>
+        <tr>
+          <td>Sept 2020-...</td>
+          <td>Backend Developer</td>
+        </tr>
+
+        <tr>
+          <td>Jan 2020-...</td>
+          <td>Web Development Self Study</td>
+        </tr>
+        <tr>
+          <td>2019-2020</td>
+          <td>Secondary School Foreign Language Teacher</td>
+        </tr>
+        <tr>
+          <td>2018-2019</td>
+          <td>
+            PGCE (Postgraduate Certificate in Education), Bath Spa University
+          </td>
+        </tr>
+        <tr>
+          <td>2017-2018</td>
+          <td>Project Manager in Translations</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>Research Assistant (Volunteer): Bilingualism and the Brain</td>
+        </tr>
+        <tr>
+          <td>2017</td>
+          <td>Kitchen Manager</td>
+        </tr>
+        <tr>
+          <td>2016-2017</td>
+          <td>Computational Linguistics, UCLA</td>
+        </tr>
+        <tr>
+          <td>2013-2017</td>
+          <td>B.A. Linguistics and Applied Languages, UCM</td>
+        </tr>
+        <tr>
+          <td>2013-2016</td>
+          <td>Self-employed English and German Teacher</td>
+        </tr>
+        <tr>
+          <td>2015</td>
+          <td>Internship Subtitling / Translations</td>
+        </tr>
+        <tr>
+          <td>2013-2016</td>
+          <td>Summer Camp Monitor: English Immersion</td>
+        </tr>
+        <tr id="last-row">
+          <td>2007-2013</td>
+          <td>Gymnastics Coach (Volunteer)</td>
+        </tr>
+      </table>
+    </div>
+    <div class="main contact" id="contact">
+      <a href="https://github.com/LisaLaw" target="_blank"
+        ><img src="./icon-github.png" alt="GitHub"
+      /></a>
+      <a href="https://www.linkedin.com/in/lisa-law/" target="_blank"
+        ><img src="./icon-linkedin.png" alt="LinkedIn" id="linkedin"
+      /></a>
+      <a href="mailto:lisacatlaw@gmail.com" target="_blank"
+        ><img src="./icon-email.png" alt="Email" id="email"
+      /></a>
+      <a href="tel:0044-7366-40-95-18"
+        ><img src="./icon-telephone.jpg" alt="Telephone"
+      /></a>
+      <a href="https://twitter.com/mrs_l_law" target="_blank"
+        ><img src="./icon-twitter.png" alt="Twitter"
+      /></a>
+      <button class="top"><a href="#home">&#129053;</a></button>
+      <!--up arrow-->
     </div>
     <footer>
-        <p>&#169;2020 | Lisa Law</p>
+      <p>&#169;2020 | Lisa Law</p>
     </footer>
-</body>
-
+  </body>
 </html>

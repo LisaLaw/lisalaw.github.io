@@ -26,7 +26,7 @@ nav {
   width: 100%;
   background-color: white;
   align-items: center;
-  margin-top: 5px;
+  margin: 5px;
   z-index: 5;
   box-shadow: 1px 1px 3px #064789;
   border-bottom: 1px solid #064789;
@@ -62,60 +62,43 @@ nav a.active {
   overflow: hidden;
   color: white;
 }
+
 .main {
-  height: 550px;
   background-color: #ebf2fa;
-  width: 100%;
   box-shadow: -1px 1px 5px #064789;
-  /*border-radius: 10px;*/
-  /*border: solid 1px #8f666c;*/
-  margin-top: 90px;
+  padding: 10px;
   display: flex;
   flex-direction: row;
-  /*color: rgb(34, 34, 70);*/
   color: black;
 }
-.colored-strip {
-  height: auto;
-  /*border: 15px solid rgb(194, 55, 97);*/
+
+.home {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
 }
-#main-strip {
-  margin-left: 200px;
-}
+
 h1 {
   color: #064789;
 }
+
 .title {
   font-size: 35px;
   text-align: left;
   line-height: 2;
-  /*color: rgb(34, 34, 70);*/
   color: black;
   width: 800px;
-  margin-left: 30px;
   text-shadow: 1px 1px;
   align-self: center;
 }
-.cv {
-  justify-content: space-around;
-  height: auto;
-  margin-top: 30px;
-}
+
 .main-left {
   display: flex;
   flex-direction: column;
   padding: 10px;
   margin: 0 45px;
 }
-.img-container {
-  align-self: center;
-  padding-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  width: 70%;
-  align-self: flex-start;
-}
+
 .top a {
   text-decoration: none;
   color: white;
@@ -135,13 +118,7 @@ h1 {
   cursor: pointer;
   transform: scale(1.1);
 }
-#strip-CV {
-  margin-left: 10px;
-  border: 10px solid #064789;
-}
-img {
-  border-radius: 5px;
-}
+
 .intro {
   margin-right: 20px;
   text-align: justify;
@@ -150,28 +127,46 @@ img {
 .main-right {
   padding: 10px;
 }
+
 .curriculum {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
   background-color: black;
   border-radius: 5px;
   padding: 10px;
-  margin: 10px 0;
-  width: 450px;
+  margin: 10px;
+  margin-top: 5%;
 }
+
+.img-container {
+  align-self: center;
+  padding: 10px;
+  align-self: flex-start;
+}
+
+img {
+  border-radius: 5px;
+}
+
 .curriculum p {
-  /*color: rgb(245, 199, 214);*/
-  color: red;
+  color: rgb(225, 4, 4);
   line-height: 1.5;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 1.5px;
+  margin: 10px;
 }
+
 .punctuation {
   color: orange;
   font-weight: bold;
 }
+
 .value {
   /*color: rgb(253, 232, 240);*/
-  color: rgb(81, 206, 248);
+  color: rgb(89, 176, 244);
 }
+
 .projects {
   padding: 0;
   justify-content: space-between;
