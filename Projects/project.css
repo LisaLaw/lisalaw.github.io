@@ -18,14 +18,18 @@ body {
     font-size: 15px;
     width: 110px;
 }
-.btn-back:hover {
-    cursor: pointer;
-}
+
 .btn-back a {
     color: #8f666c;
     text-decoration: none;
     text-transform: uppercase;
 }
+
+button:hover {
+    cursor: pointer;
+    box-shadow: 0 4px 6px 0#8f666c;
+}
+
 .main-top {
     display: flex;
     flex-direction: row;
@@ -93,11 +97,7 @@ li {
     text-decoration: none;
     font-size: 15px;
 }
-.btn-detail:hover {
-    border: 1px solid black;
-    cursor: pointer;
-    transform: scale(1.1)
-}
+
 .main-bottom {
     margin-top: 50px;
     flex-direction: column;

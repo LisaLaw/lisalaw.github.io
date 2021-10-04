@@ -28,59 +28,170 @@
         </li>
       </ul>
     </nav>
+    <div class="main home" id="home">
+      <h1 class="title">
+        Hello and welcome to my webpage! <br />
+        My name is Lisa and here you can find out about all the cool stuff that
+        I do.<br />
+        <span style="font-size: 12px"
+          ><span style="text-decoration: underline">Note: </span>This webpage is
+          still under construction, please bear with me meanwhile.</span
+        >
+      </h1>
+      <div class="colored-strip" id="main-strip"></div>
+    </div>
+    <div class="main cv" id="cv">
+      <!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
 
-    <!--extra id chosen to inherit .main attributes and add some #main-CV attributes-->
-    <div class="curriculum">
-      <!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
-      <p>
-        <span class="punctuation">{</span><br />
-        <!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
-        &emsp;"name" : <span class="value"> "Lisa Law"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;"github" : <span class="value"> "github.io/LisaLaw"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;"experience" : <br />
-        &emsp;<span class="punctuation">[</span><br />
-        &emsp;&emsp;<span class="punctuation">{</span><br />
-        &emsp;&emsp;&emsp;"area" :
-        <span class="value"> "Front-end Developer"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2021"</span
-        ><span class="punctuation">,</span> <br />
-        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
-        ><br />
-        &emsp;&emsp;<span class="punctuation">},</span><br />
-        &emsp;&emsp;<span class="punctuation">{</span><br />
-        &emsp;&emsp;&emsp;"area" :
-        <span class="value"> "Back-end Developer"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"since" : <span class="value"> "January 2020"</span
-        ><span class="punctuation">,</span>
-        <br />
-        &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
-        ><br />
-        &emsp;&emsp;<span class="punctuation">},</span><br />
-        &emsp;&emsp;<span class="punctuation">{</span><br />
-        &emsp;&emsp;&emsp;"area" :
-        <span class="value"> "Project Manager"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"since" :
-        <span class="value"> "September 2017"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span
-        ><span class="punctuation">,</span><br />
-        &emsp;&emsp;<span class="punctuation">}</span><br />
-        &emsp;<span class="punctuation">]</span><br />
-        <span class="punctuation">}</span>
-      </p>
-      <div class="img-container">
-        <img src="./profilepic2.jpg" alt="me" />
+      <div class="main-left">
+        <div class="img-container">
+          <img src="./profilepic2.jpg" alt="me" />
+        </div>
+        <div class="intro">
+          <p>
+            Hello! My name is Lisa and I am a web developer.<br />
+            I started my programming journey at the beginning of 2020.<br />
+            <br />
+            I had already made the choice to specialize in Computational
+            Linguistics during my B.A. in 2017, when I had the amazing
+            opportunity to spend a year at UCLA.<br />
+            <br />
+            For a while, I worked as a Project Manager in translations. This
+            taught me multitasking skills and what it's like to work in a
+            fast-paced environment.<br />
+            Next, I completed a Master's level program in education, a Post
+            Graduate Certificate of Education (PGCE) to teach German, Spanish
+            and French as foreign languages. Before I knew it, I was working
+            with teenagers. It was an invaluable experience which taught me a
+            lot about me patience and looking at a problem from different
+            angles.
+            <br />
+            During this time, I felt an increased need to create, to develop and
+            to work with challenging, more analytical tasks.<br />
+            I felt a calling and I decided to teach myself the art of
+            developing.<br />
+            <br />
+            I have some experience teaching myself as I have a love for
+            languages and have previously learned Spanish and French mostly on
+            my own. I love working on a new language - be it spoken or
+            computational -, working out the intrinsic details and underlying
+            logical structures.<br />
+            <br />
+            So at the beginning of 2020 I started my Python journey with online
+            courses. I have been hooked every since.<br />
+            Since, I have been working with Python, Django, and JavaScript.
+            <br /><br />
+            <a href="#skills">Jump straight to my experiences.</a>
+            <br /><br />
+            If you want to learn more about me and my thoughts, don't forget to
+            check out my blog!<br />
+            For more technical writings, please have a look at
+            <a href="https://medium.com/@lisa.law">my medium profile</a>, where
+            I've been publishing for my current company.
+          </p>
+        </div>
+        <button class="top"><a href="#home">&#129053;</a></button>
+        <!--up arrow-->
+      </div>
+      <div class="main-right">
+        <div class="curriculum">
+          <!--curriculum written as if it was back-end code &emsp; symbol for tab space-->
+          <p>
+            <span class="punctuation">{</span><br />
+            <!--.punctuation to mark commas, list, dictionary starts / finished in different color-->
+            &emsp;"name" : <span class="value"> "Lisa"</span
+            ><span class="punctuation">,</span><br />
+            <!--.value to mark the value of the key-value pair in a dictionary in a different color-->
+            &emsp;"last_name" : <span class="value"> "Law"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;"email" : <span class="value"> "lisacatlaw@gmail.com"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;"phone" : <span class="value"> "639 624 915"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;"github" : <span class="value"> "github.io/LisaLaw"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;"experience" : <br />
+            &emsp;<span class="punctuation">[</span><br />
+            &emsp;&emsp;<span class="punctuation">{</span><br />
+            &emsp;&emsp;&emsp;"area" :
+            <span class="value"> "Back-end Developer"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"since" :
+            <span class="value"> "January 2020"</span
+            ><span class="punctuation">,</span> <br />
+            &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
+            ><br />
+            &emsp;&emsp;<span class="punctuation">},</span><br />
+            &emsp;&emsp;<span class="punctuation">{</span><br />
+            &emsp;&emsp;&emsp;"area" :
+            <span class="value"> "Front-end Developer"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"level" : <span class="value"> "Junior"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"since" : <span class="value"> "May 2020"</span
+            ><span class="punctuation">,</span>
+            <br />
+            &emsp;&emsp;&emsp;"status" : <span class="value"> "Developing"</span
+            ><br />
+            &emsp;&emsp;<span class="punctuation">},</span><br />
+            &emsp;&emsp;<span class="punctuation">{</span><br />
+            &emsp;&emsp;&emsp;"area" :
+            <span class="value"> "Secondary Teacher"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"level" :
+            <span class="value"> "Recently Qualified Teacher (RQT)"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"since" :
+            <span class="value"> "September 2018"</span
+            ><span class="punctuation">,</span> <br />
+            &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span
+            ><br />
+            &emsp;&emsp;&emsp;"speciality" : <br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"German"</span
+            ><span class="punctuation">,</span
+            ><span class="value"> "Spanish"</span
+            ><span class="punctuation">,</span
+            ><span class="value"> "French"</span><br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br />
+            &emsp;&emsp;<span class="punctuation">},</span><br />
+            &emsp;&emsp;<span class="punctuation">{</span><br />
+            &emsp;&emsp;&emsp;"area" :
+            <span class="value"> "Project Manager"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"since" :
+            <span class="value"> "September 2017"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;<span class="punctuation">},</span><br />
+            &emsp;&emsp;&emsp;"area" : <span class="value"> "Student"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"level" : <br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value">"B.A."</span
+            ><span class="punctuation">,</span
+            ><span class="value"> "Postgraduate Certificate"</span><br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">],</span><br />
+            &emsp;&emsp;&emsp;"since" :
+            <span class="value"> "September 2012"</span
+            ><span class="punctuation">,</span> <br />
+            &emsp;&emsp;&emsp;"status" : <span class="value"> "Retired"</span
+            ><span class="punctuation">,</span><br />
+            &emsp;&emsp;&emsp;"speciality" : <br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">[</span><br />
+            &emsp;&emsp;&emsp;&emsp;&emsp;<span class="value"
+              >"Computational Linguistics"</span
+            ><span class="punctuation">,</span
+            ><span class="value"> "Education"</span><br />
+            &emsp;&emsp;&emsp;&emsp;<span class="punctuation">]</span><br />
+            &emsp;&emsp;<span class="punctuation">}</span><br />
+            &emsp;<span class="punctuation">]</span><br />
+            <span class="punctuation">}</span>
+          </p>
+        </div>
       </div>
     </div>
     <div class="main projects" id="projects">
@@ -272,6 +383,14 @@
             alt="js"
           />
           <h4>JavaScript</h4>
+        </div>
+        <div class="single-skill">
+          <img src="./icon-react" alt="React" />
+          <h4>React</h4>
+        </div>
+        <div class="single-skill">
+          <img src="./icon-gatsby" alt="Gatsby" />
+          <h4>Gatsby</h4>
         </div>
       </div>
       <div class="certificates-container" id="certificates">

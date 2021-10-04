@@ -46,7 +46,7 @@ nav ul li {
   flex-grow: 1;
   text-transform: uppercase;
 }
-nav a {
+nav a, .intro a {
   color: #064789;
   text-decoration: none;
 }
@@ -134,9 +134,8 @@ h1 {
   align-items: space-between;
   background-color: black;
   border-radius: 5px;
-  padding: 10px;
-  margin: 10px;
-  margin-top: 5%;
+  margin: 10px 0;
+  width: 450px;
 }
 
 .img-container {
