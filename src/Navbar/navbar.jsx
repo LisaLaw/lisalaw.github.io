@@ -1,25 +1,26 @@
-import { logo_small, logo_big } from '../logos'; // check imports, different file? -> CW project
+import logo from '../logos/logo_small.svg'; // check imports, different file? -> CW project
+import { StyledNavbar, StyledLogoSection, StyledLinkSection, NavbarListItem, StyledNavbarButton } from './styles';
 
 export const Navbar = () => {
-    return <navbar>
-        <span className="navbar_left">
+    return <StyledNavbar>
+        <StyledLogoSection>
             <a href="../App.js">Lisa Law</a> {/* Check link connection*/}
-            <img src="logo_small" alt="test" />
-        </span>
+            <img src={logo} alt="test" />
+        </StyledLogoSection>
 
-        <ul className="navbar_right">
-            <li>
-                <a href="">About</a>
-            </li>
-            <li>
-                <a href="">Projects</a>
-            </li>
-            <li>
-                <a href="">Skills</a>
-            </li>
-            <li>
-                <button>Download CV</button>
-            </li> {/*check how to download files*/}
-        </ul>
-    </navbar>
+        <StyledLinkSection>
+            <NavbarListItem>
+                <a href="./">About</a>
+            </NavbarListItem>
+            <NavbarListItem>
+                <a href="./">Projects</a>
+            </NavbarListItem>
+            <NavbarListItem>
+                <a href="./">Skills</a>
+            </NavbarListItem>
+            <NavbarListItem>
+                <StyledNavbarButton>Download CV</StyledNavbarButton>
+            </NavbarListItem> {/*check how to download files*/}
+        </StyledLinkSection>
+    </StyledNavbar>
 };
