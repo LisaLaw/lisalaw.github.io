@@ -2,25 +2,28 @@ import logo from '../logos/logo_small.svg'; // check imports, different file? ->
 import { StyledNavbar, StyledLogoSection, StyledLinkSection, NavbarListItem, StyledNavbarButton } from './styles';
 
 export const Navbar = () => {
+    const downloadCV = () => {
+        window.location.href= "lisalaw.github.io/src/constants/CV.pdf"
+    }; /*check when version 2 is running*/
+
     return <StyledNavbar>
-        <StyledLogoSection>
-            <a href="../App.js">Lisa Law</a> {/* Check link connection*/}
-            <img src={logo} alt="test" />
+        <StyledLogoSection href="#home">Lisa Law
+                <img src={logo} alt="test" />
         </StyledLogoSection>
 
         <StyledLinkSection>
             <NavbarListItem>
-                <a href="./">About</a>
+                <a href="#about">About</a>
             </NavbarListItem>
             <NavbarListItem>
-                <a href="./">Projects</a>
+                <a href="#projects">Projects</a>
             </NavbarListItem>
             <NavbarListItem>
-                <a href="./">Skills</a>
+                <a href="#skills">Skills</a>
             </NavbarListItem>
             <NavbarListItem>
-                <StyledNavbarButton>Download CV</StyledNavbarButton>
-            </NavbarListItem> {/*check how to download files*/}
+                <StyledNavbarButton onClick={downloadCV}>Download CV</StyledNavbarButton>
+            </NavbarListItem>
         </StyledLinkSection>
     </StyledNavbar>
 };

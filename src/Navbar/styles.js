@@ -16,18 +16,23 @@ const StyledNavbar = styled.div`
     }
 `;
 
-const StyledLogoSection = styled.span`
+const StyledLogoSection = styled.a`
+    display: flex;
+    line-height: 1.5;
+    padding: 3px 2px 0 2px;
+    margin: 0 10px 0 15px;
     border: none;
     font-variant: small-caps;
-    margin-left: 15px;
+    font-size: 20px;
 
     & img {
-        margin-right: 10px;
+        align-self: center;
+        padding-bottom: 1px;
     }
     
     @media (min-width: ${screenSize.mobile}) {
         border-right: 1.5px solid ${colors.grayColor.dark};
-  }
+    }
 `;
 
 const StyledLinkSection = styled.ul`
@@ -47,8 +52,15 @@ const NavbarListItem = styled.li`
     list-style: none;
     padding: 0 7px;
 
-    &:hover {
-        text-decoration-style: dashed;
+    :hover {
+        border-bottom: 1px solid ${colors.grayColor.medium};
+        padding-bottom: 2px;
+        border-radius: 1px;
+    }
+
+    &:last-child:hover {
+        border-bottom: none;
+        padding-bottom: none;
     }
 `;
 
@@ -61,8 +73,8 @@ const StyledNavbarButton = styled.button`
     font: inherit;
     cursor: pointer;
 
-    &:hover {
-        border-color: ${colors.grayColor.dark};
+    :hover {
+        border: 1px solid ${colors.grayColor.dark};
     }
 `;
 
