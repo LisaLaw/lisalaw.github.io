@@ -1,4 +1,5 @@
 import logo from "../../constants/logos/logo_small.svg"; // check imports, different file? -> CW project
+import { navbarItems } from "../../constants/navbarItems";
 import {
   StyledNavbar,
   StyledLogoSection,
@@ -21,22 +22,23 @@ export const Navbar = () => {
         <img src={logo} alt="test" />
       </StyledLogoSection>
 
-      <StyledLinkSection onClick={toggleMenu}>
-        <NavbarListItem>
-          <a href="#about">About</a>
-        </NavbarListItem>
-        <NavbarListItem>
-          <a href="#projects">Projects</a>
-        </NavbarListItem>
-        <NavbarListItem>
-          <a href="#skills">Skills</a>
-        </NavbarListItem>
-        <NavbarListItem>
-          <StyledNavbarButton onClick={downloadCV}>
-            Download CV
-          </StyledNavbarButton>
-        </NavbarListItem>
-      </StyledLinkSection>
+      {navbarItems.length && (
+        <StyledLinkSection onClick={{ toggleMenu }}>
+          {navbarItems.map((item) => {
+            return (
+              <NavbarListItem>
+                <a href={item.url}>{item.label}</a>
+              </NavbarListItem>
+            );
+          })}
+
+          <NavbarListItem>
+            <StyledNavbarButton onClick={downloadCV}>
+              Download CV
+            </StyledNavbarButton>
+          </NavbarListItem>
+        </StyledLinkSection>
+      )}
     </StyledNavbar>
   );
 };
