@@ -6,12 +6,16 @@ export const Navbar = () => {
         window.location.href= "lisalaw.github.io/src/constants/CV.pdf"
     }; /*check when version 2 is running*/
 
+    const toggleMenu = () => {
+        
+    }
+
     return <StyledNavbar>
         <StyledLogoSection href="#home">Lisa Law
                 <img src={logo} alt="test" />
         </StyledLogoSection>
 
-        <StyledLinkSection>
+        <StyledLinkSection onClick={toggleMenu}>
             <NavbarListItem>
                 <a href="#about">About</a>
             </NavbarListItem>
