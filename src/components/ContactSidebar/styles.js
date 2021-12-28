@@ -7,6 +7,7 @@ const StyledContactSidebar = styled.div`
   display: row;
   align-items: center;
   align-self: center;
+  border: 5px dashed gray;
 
   @media (min-width: ${screenSize.mobile}) {
     flex-direction: column;
@@ -40,6 +41,12 @@ const StyledContactSidebar = styled.div`
 
 const StyledContactLink = styled.a`
   @media (min-width: ${screenSize.mobile}) {
+    display: none;
+  }
+
+  a[href^="tel"]:link,
+  a[href^="tel"]:visited,
+  a[href^="tel"]:hover {
     display: none;
   }
 `;
