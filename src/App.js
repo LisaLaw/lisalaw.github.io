@@ -1,6 +1,6 @@
-import './App.css';
-import { Navbar } from './Navbar/navbar';
-import { ContactSidebar } from './ContactSidebar/contactSidebar';
+import "./App.css";
+import { Navbar } from "./components/Navbar/navbar";
+import { ContactSidebar } from "./components/ContactSidebar/contactSidebar";
 // import { HomePage } from './Main/homePage';
 // import { Footer } from './Footer/footer';
 

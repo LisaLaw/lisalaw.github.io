@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { screenSize, colors } from "../../constants/constants";
-import logo from "../logos/logo_left.svg";
+import logo from "../../constants/logos/logo_left.svg";
 
 const StyledContactSidebar = styled.div`
   display: flex;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { screenSize, colors } from "../../constants/constants";
-import burger_menu from "../logos/burger_menu.svg";
+import burger_menu from "../../constants/logos/burger_menu.svg";
 
 const StyledNavbar = styled.div`
   display: flex;
