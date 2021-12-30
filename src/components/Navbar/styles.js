@@ -1,14 +1,13 @@
 import styled from "styled-components";
 import { screenSize, colors } from "../../constants/constants";
-import burger_menu from "../../constants/logos/burger_menu.svg";
 
 const StyledNavbar = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 3px 15px;
   justify-content: space-between;
   color: ${colors.grayColor.dark};
-  width: 100%;
 
   & a {
     text-decoration: none;
@@ -17,11 +16,9 @@ const StyledNavbar = styled.div`
   }
 `;
 
-const StyledLogoSection = styled.a`
+const StyledLogoWrapper = styled.a`
   display: flex;
   line-height: 1.5;
-  padding: 3px 2px 0 2px;
-  margin: 0 10px 0 15px;
   border: none;
   font-variant: small-caps;
   font-size: 20px;
@@ -36,15 +33,22 @@ const StyledLogoSection = styled.a`
   }
 `;
 
-const StyledLinkSection = styled.ul`
-  align-items: center;
-  background-image: url(${burger_menu});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: fit;
+const Icon = styled.img`
   height: 20px;
   width: 23px;
+
+  @media (min-width: ${screenSize.mobile}) {
+    display: none;
+  }
+`;
+
+const StyledNavLinks = styled.ul`
+  align-items: center;
+  height: 20px;
+  width: 100%;
+  margin-top: 100px;
   flex-direction: column;
+  justify-content: stretch;
 
   @media (min-width: ${screenSize.mobile}) {
     display: flex;
@@ -58,9 +62,9 @@ const StyledLinkSection = styled.ul`
   }
 `;
 
-const NavbarListItem = styled.li`
+const ListItem = styled.li`
   list-style: none;
-  display: none;
+  display: ${({ display }) => (display ? `flex` : `none`)};
   margin-bottom: 1px solid ${colors.grayColor.medium};
   height: 20px;
 
@@ -98,8 +102,9 @@ const StyledNavbarButton = styled.button`
 
 export {
   StyledNavbar,
-  StyledLogoSection,
-  StyledLinkSection,
-  NavbarListItem,
+  StyledLogoWrapper,
+  StyledNavLinks,
+  Icon,
+  ListItem,
   StyledNavbarButton,
 };
