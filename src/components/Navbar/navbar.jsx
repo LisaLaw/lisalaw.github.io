@@ -5,7 +5,7 @@ import burger from "../../constants/logos/burger_menu.svg";
 import cross from "../../constants/logos/cross.svg";
 import {
   StyledNavbar,
-  StyledLogoWrapper,
+  StyledLogoLink,
   StyledNavLinks,
   Icon,
   ListItem,
@@ -25,32 +25,33 @@ export const Navbar = () => {
   const menuIcon = displayed ? cross : burger;
 
   return (
-    <>
-      <StyledNavbar>
-        <StyledLogoWrapper href="#home">
-          Lisa Law
-          <img src={logo} alt="test" />
-        </StyledLogoWrapper>
-        <Icon src={menuIcon} onClick={() => toggleMenu()} />
-      </StyledNavbar>
+    <StyledNavbar>
+      <StyledLogoLink href="#home">
+        Lisa Law
+        <img src={logo} alt="test" />
+      </StyledLogoLink>
+      <Icon src={menuIcon} onClick={() => toggleMenu()} />
 
       {navbarItems.length && (
-        <StyledNavLinks>
+        <StyledNavLinks display={displayed}>
           {navbarItems.map((item) => {
+            if (item.type === "button") {
+              return (
+                <ListItem>
+                  <StyledNavbarButton onClick={item.onClick}>
+                    {item.label}
+                  </StyledNavbarButton>
+                </ListItem>
+              );
+            }
             return (
               <ListItem display={displayed}>
                 <a href={item.url}>{item.label}</a>
               </ListItem>
             );
           })}
-
-          <ListItem>
-            <StyledNavbarButton onClick={downloadCV}>
-              Download CV
-            </StyledNavbarButton>
-          </ListItem>
         </StyledNavLinks>
       )}
-    </>
+    </StyledNavbar>
   );
 };

@@ -3,23 +3,26 @@ import { screenSize, colors } from "../../constants/constants";
 
 const StyledNavbar = styled.div`
   display: flex;
-  flex-direction: row;
   align-items: center;
-  margin: 3px 15px;
+  margin: 3px 10px 0px 10px;
   justify-content: space-between;
   color: ${colors.grayColor.dark};
+  flex-wrap: wrap;
 
   & a {
     text-decoration: none;
     color: ${colors.grayColor.dark};
     padding: 2px;
   }
+
+  @media (min-width: ${screenSize.mobile}) {
+    margin: 3px 22px 0px 22px;
+  }
 `;
 
-const StyledLogoWrapper = styled.a`
+const StyledLogoLink = styled.a`
   display: flex;
   line-height: 1.5;
-  border: none;
   font-variant: small-caps;
   font-size: 20px;
 
@@ -44,21 +47,23 @@ const Icon = styled.img`
 
 const StyledNavLinks = styled.ul`
   align-items: center;
-  height: 20px;
-  width: 100%;
-  margin-top: 100px;
   flex-direction: column;
   justify-content: stretch;
+  flex-grow: ${({ display }) => (display ? 2 : 0)};
+  width: 100%;
+  height: ${({ display }) => !display && `0px`};
+  padding: 0px;
+  margin-right: 10px;
 
   @media (min-width: ${screenSize.mobile}) {
     display: flex;
     flex-direction: row;
     align-items: space-around;
     align-self: flex-end;
-    margin-right: 15px;
     background: none;
     height: unset;
     width: unset;
+    flex-grow: 0;
   }
 `;
 
@@ -66,12 +71,32 @@ const ListItem = styled.li`
   list-style: none;
   display: ${({ display }) => (display ? `flex` : `none`)};
   margin-bottom: 1px solid ${colors.grayColor.medium};
-  height: 20px;
+  height: 30px;
+  align-items: center;
+  text-transform: uppercase;
+  padding: 5px 10px;
+
+  &:nth-child(odd) {
+    background-color: ${colors.grayColor.light};
+  }
+
+  &:nth-child(even) {
+    background-color: ${colors.grayColor.extraLight};
+  }
 
   @media (min-width: ${screenSize.mobile}) {
     display: flex;
     padding: 0 7px;
     height: unset;
+    text-transform: none;
+
+    &:nth-child(odd) {
+      background-color: transparent;
+    }
+
+    &:nth-child(even) {
+      background-color: transparent;
+    }
 
     :hover {
       border-bottom: 1px solid ${colors.grayColor.medium};
@@ -102,7 +127,7 @@ const StyledNavbarButton = styled.button`
 
 export {
   StyledNavbar,
-  StyledLogoWrapper,
+  StyledLogoLink,
   StyledNavLinks,
   Icon,
   ListItem,
