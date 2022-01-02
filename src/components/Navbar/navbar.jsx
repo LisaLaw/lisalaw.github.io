@@ -35,7 +35,13 @@ export const Navbar = () => {
       {navbarItems.length && (
         <StyledNavLinks display={displayed}>
           {navbarItems.map((item) => {
-            return (
+            return item.onClick ? (
+              <ListItem display={displayed}>
+                <StyledNavbarButton onClick={() => downloadCV()}>
+                  {item.label}
+                </StyledNavbarButton>
+              </ListItem>
+            ) : (
               <ListItem display={displayed}>
                 <a href={item.url}>{item.label}</a>
               </ListItem>
@@ -43,12 +49,6 @@ export const Navbar = () => {
           })}
         </StyledNavLinks>
       )}
-
-      <ListItem display={displayed}>
-        <StyledNavbarButton onClick={() => downloadCV()}>
-          Download CV
-        </StyledNavbarButton>
-      </ListItem>
     </StyledNavbar>
   );
 };
