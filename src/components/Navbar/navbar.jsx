@@ -35,7 +35,7 @@ export const Navbar = () => {
       {navbarItems.length && (
         <StyledNavLinks display={displayed}>
           {navbarItems.map((item) => {
-            return item.onClick ? (
+            return item.type === "button" ? (
               <ListItem display={displayed}>
                 <StyledNavbarButton onClick={() => downloadCV()}>
                   {item.label}

@@ -53,7 +53,6 @@ const StyledNavLinks = styled.ul`
   width: 100%;
   height: ${({ display }) => !display && `0px`};
   padding: 0px;
-  margin-right: 10px;
 
   @media (min-width: ${screenSize.mobile}) {
     display: flex;
@@ -64,6 +63,7 @@ const StyledNavLinks = styled.ul`
     height: unset;
     width: unset;
     flex-grow: 0;
+    margin-right: 10px;
   }
 `;
 
@@ -112,17 +112,22 @@ const ListItem = styled.li`
 `;
 
 const StyledNavbarButton = styled.button`
-    border-radius: 6px;
-    border: 1px solid ${colors.grayColor.medium};
-    background: transparent;
-    color: {colors.grayColor.dark};
-    padding: 7px 10px;
-    font: inherit;
-    cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: inherit;
+  font: inherit;
 
-    :hover {
-        border: 1px solid ${colors.grayColor.dark};
-    }
+  @media (min-width: ${screenSize.mobile}) {
+      border-radius: 6px;
+      border: 1px solid ${colors.grayColor.medium};
+      color: {colors.grayColor.dark};
+      padding: 7px 10px;
+      cursor: pointer;
+
+      :hover {
+          border: 1px solid ${colors.grayColor.dark};
+      }
+  }
 `;
 
 export {

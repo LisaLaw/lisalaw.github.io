@@ -18,6 +18,5 @@ export const navbarItems = [
     label: "Download CV",
     url: "",
     type: "button",
-    onClick: "downloadCV",
   },
 ];
