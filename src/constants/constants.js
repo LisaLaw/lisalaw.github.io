@@ -12,4 +12,15 @@ export const colors = {
     light: "#F4F5F9",
     extraLight: "#F9F9F9",
   },
+  themeColor: "rgb(172, 82, 109)",
+  shadows: {
+    sectionShadow: {
+      unfocused: "rgb(138, 138, 138, 0.5)",
+      focused: "rgb(138, 138, 138, 0.7)",
+    },
+    sidebarShadow: {
+      retracted: "rgb(138, 138, 138, 0.3)",
+      extended: "rgb(138, 138, 138, 0.8)",
+    },
+  },
 };
