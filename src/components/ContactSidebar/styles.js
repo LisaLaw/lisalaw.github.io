@@ -7,11 +7,12 @@ const StyledContactSidebar = styled.div`
   display: row;
   align-items: center;
   align-self: center;
+  order: 2;
 
   @media (min-width: ${screenSize.mobile}) {
     flex-direction: column;
     align-self: flex-start;
-    border: 0.2px solid ${colors.grayColor.dark};
+    border: 0.2px solid ${colors.grayColor.light};
     border-left: none;
     padding-left: 2px;
     position: absolute;
@@ -23,16 +24,20 @@ const StyledContactSidebar = styled.div`
     background-size: fit;
     height: 40px;
     width: 20px;
+    order: 1;
+    box-shadow: 0.5px 1px 1px ${colors.shadows.sidebarShadow.retracted};
 
     :hover {
-      background: none;
+      background: white;
       height: unset;
       width: unset;
       padding: unset;
+      border: 0.2px solid ${colors.grayColor.light};
+      box-shadow: 2px 4px 5px ${colors.shadows.sidebarShadow.extended};
     }
 
     :hover a {
-      transition: 0.7s all ease-in-out;
+      transition: 0.3s all ease-in-out;
       display: flex;
     }
   }
