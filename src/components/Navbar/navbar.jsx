@@ -36,13 +36,13 @@ export const Navbar = () => {
         <StyledNavLinks display={displayed}>
           {navbarItems.map((item) => {
             return item.type === "button" ? (
-              <ListItem display={displayed}>
+              <ListItem display={displayed} key={item.key}>
                 <StyledNavbarButton onClick={() => downloadCV()}>
                   {item.label}
                 </StyledNavbarButton>
               </ListItem>
             ) : (
-              <ListItem display={displayed}>
+              <ListItem display={displayed} key={item.key}>
                 <a href={item.url}>{item.label}</a>
               </ListItem>
             );
