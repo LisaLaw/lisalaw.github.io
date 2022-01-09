@@ -8,6 +8,7 @@ const StyledContactSidebar = styled.div`
   align-items: center;
   align-self: center;
   order: 2;
+  z-index: 10;
 
   @media (min-width: ${screenSize.mobile}) {
     flex-direction: column;

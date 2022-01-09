@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import logo from "../../constants/logos/logo_big.svg";
-import { screenSize } from "../../constants/constants";
 
 const StyledMain = styled.div`
   width: 90%;
@@ -12,10 +11,6 @@ const StyledMain = styled.div`
 
   display: flex;
   flex-direction: column;
-
-  @media (min-width: ${screenSize.mobile}) {
-    flex-wrap: wrap;
-  }
 `;
 
 export { StyledMain };
