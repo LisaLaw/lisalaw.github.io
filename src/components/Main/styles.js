@@ -10,6 +10,7 @@ const StyledMain = styled.div`
   background-position: center;
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 `;
 
 export { StyledMain };

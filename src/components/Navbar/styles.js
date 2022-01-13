@@ -4,10 +4,9 @@ import { screenSize, colors } from "../../constants/constants";
 const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
-  margin: 3px 10px 0px 10px;
   justify-content: space-between;
   color: ${colors.grayColor.dark};
-  flex-wrap: wrap;
+  border-bottom: 1px solid ${colors.grayColor.extraLight};
 
   & a {
     text-decoration: none;
@@ -119,13 +118,15 @@ const StyledNavbarButton = styled.button`
 
   @media (min-width: ${screenSize.mobile}) {
       border-radius: 6px;
-      border: 1px solid ${colors.grayColor.medium};
+      border: 1px solid ${colors.grayColor.extraLight};
+      box-shadow: 1px 3px 3px ${colors.shadows.sidebarShadow.retracted};
       color: {colors.grayColor.dark};
       padding: 7px 10px;
       cursor: pointer;
 
       :hover {
-          border: 1px solid ${colors.grayColor.dark};
+          border: 1px solid ${colors.grayColor.light};
+      box-shadow: 1px 3px 3px ${colors.shadows.sidebarShadow.extended};
       }
   }
 `;
