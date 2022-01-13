@@ -8,7 +8,6 @@ const StyledMain = styled.div`
   background-image: url(${logo});
   background-repeat: no-repeat;
   background-position: center;
-
   display: flex;
   flex-direction: column;
 `;
