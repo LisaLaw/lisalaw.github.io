@@ -2,7 +2,7 @@ import "./App.css";
 import { Navbar } from "./components/Navbar/navbar";
 import { ContactSidebar } from "./components/ContactSidebar/contactSidebar";
 import { Main } from "./components/Main/main";
-// import { Footer } from './Footer/footer';
+import { Footer } from "./components/Footer/footer.jsx";
 
 const App = () => {
   return (
@@ -10,7 +10,7 @@ const App = () => {
       <Navbar />
       <ContactSidebar />
       <Main />
-      {/*<Footer />*/}
+      <Footer />
     </div>
   );
 };

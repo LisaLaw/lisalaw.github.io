@@ -3,7 +3,6 @@ import logo from "../../constants/logos/logo_big.svg";
 
 const StyledMain = styled.div`
   width: 90%;
-  height: 90%;
   align-self: center;
   background-image: url(${logo});
   background-repeat: no-repeat;

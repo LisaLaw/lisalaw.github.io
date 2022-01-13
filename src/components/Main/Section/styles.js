@@ -9,7 +9,7 @@ const StyledSection = styled.div`
   background-color: white;
   font-size: 18px;
   box-shadow: 1.5px 3px 3px ${colors.shadows.sectionShadow.unfocused};
-  min-height: 180px;
+  min-height: 150px; /*take out / update when finished */
 
   @media (min-width: ${screenSize.mobile}) {
     height: ${({ full }) => full && `100%`};

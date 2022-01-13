@@ -7,6 +7,7 @@ const StyledNavbar = styled.div`
   justify-content: space-between;
   color: ${colors.grayColor.dark};
   border-bottom: 1px solid ${colors.grayColor.extraLight};
+  flex-wrap: wrap;
 
   & a {
     text-decoration: none;
