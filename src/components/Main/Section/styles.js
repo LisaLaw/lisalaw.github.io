@@ -3,6 +3,7 @@ import { screenSize, colors } from "../../../constants/constants";
 
 const StyledSection = styled.div`
   display: flex;
+  flex-direction: column;
   margin-top: 10px;
   border-radius: 4px;
   padding: 15px;
@@ -12,10 +13,6 @@ const StyledSection = styled.div`
   min-height: 150px; /*take out / update when finished */
 
   @media (min-width: ${screenSize.mobile}) {
-    height: ${({ full }) => full && `100%`};
-    width: ${({ full }) => full && `100%`};
-    z-index: ${({ full }) => (full ? 5 : 0)};
-
     &:nth-child(2) {
       align-self: flex-end;
     }
@@ -28,7 +25,6 @@ const StyledSection = styled.div`
   }
 
   :hover {
-    cursor: pointer;
     box-shadow: 2.5px 5px 5px ${colors.shadows.sectionShadow.focused};
     border: 1px solid ${colors.grayColor.extraLight};
   }
