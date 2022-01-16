@@ -3,14 +3,10 @@ import { screenSize, colors } from "../../constants/constants";
 import logo from "../../constants/logos/logo_left.svg";
 
 const StyledContactSidebar = styled.div`
-  display: flex;
-  display: row;
-  align-items: center;
-  align-self: center;
-  order: 2;
-  z-index: 10;
+  display: none;
 
   @media (min-width: ${screenSize.mobile}) {
+    display: flex;
     flex-direction: column;
     align-self: flex-start;
     border: 0.2px solid ${colors.grayColor.light};
@@ -45,9 +41,7 @@ const StyledContactSidebar = styled.div`
 `;
 
 const StyledContactLink = styled.a`
-  @media (min-width: ${screenSize.mobile}) {
-    display: none;
-  }
+  display: none;
 
   a[href^="tel"]:link,
   a[href^="tel"]:visited,
@@ -57,21 +51,8 @@ const StyledContactLink = styled.a`
 `;
 
 const Icon = styled.img`
+  margin: 12px 10px;
   width: 32px;
-  margin: 15px 20px;
-
-  @media (min-width: ${screenSize.mobile}) {
-    margin: 12px 10px;
-    width: 32px;
-  }
 `;
 
-const Separator = styled.div`
-  border: 0.2px solid ${colors.grayColor.dark};
-  height: 32px;
-  @media (min-width: ${screenSize.mobile}) {
-    display: none;
-  }
-`;
-
-export { StyledContactSidebar, StyledContactLink, Icon, Separator };
+export { StyledContactSidebar, StyledContactLink, Icon };
