@@ -1,20 +1,14 @@
 import React from "react";
-import logo from "../../../../constants/logos/logo_right.svg";
-import { SkillsWrapper, SkillsBulletPoint, Icon, SkillsTitle } from "./styles";
+import { skills } from "../../../../constants/navbarItems";
+import { Skill } from "./Skill";
+import { SkillsWrapper } from "./styles";
 
 export const Skills = () => {
-  const titles = ["Technical Skills", "Soft Skills", "Language Skills"];
-
   return (
     <SkillsWrapper>
-      {titles.length &&
-        titles.map((title) => {
-          return (
-            <SkillsBulletPoint>
-              <Icon src={logo} />
-              <SkillsTitle>{title}</SkillsTitle>
-            </SkillsBulletPoint>
-          );
+      {skills.length &&
+        skills.map((skill) => {
+          return <Skill title={skill.title} items={skill.items} />;
         })}
     </SkillsWrapper>
   );
