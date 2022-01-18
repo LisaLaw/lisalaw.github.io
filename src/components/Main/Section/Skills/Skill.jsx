@@ -22,7 +22,7 @@ export const Skill = ({ title, items }) => {
   return (
     <SkillsBulletPoint onClick={onClick}>
       <Icon src={icon} />
-      <SkillsTitle>{title}</SkillsTitle>
+      <SkillsTitle visible={visible}>{title}</SkillsTitle>
       <SkillsList visible={visible}>
         {items.length &&
           items.map((item) => {

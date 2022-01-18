@@ -24,10 +24,8 @@ const Icon = styled.img`
 `;
 
 const SkillsTitle = styled.div`
-  color: ${colors.grayColor.dark};
-
-  @media (min-width: ${screenSize.mobile}) {
-    color: ${colors.grayColor.medium};
+  color: ${({ visible }) =>
+    visible ? colors.themeColor : colors.grayColor.medium};
 
     :hover {
       color: ${colors.grayColor.dark};
@@ -38,14 +36,15 @@ const SkillsTitle = styled.div`
 
 const SkillsList = styled.div`
   display: ${({ visible }) => (visible ? `flex` : `none`)};
-  margin-left: 20px;
+  margin: 10px 20px 0 20px;
   flex-wrap: wrap;
   width: 100%;
 `;
 
 const SkillsItem = styled.div`
   width: 100%;
-  margin: 3px;
+  margin: 6px 3px;
+  flex: 1 0 30%;
 `;
 
 export {
