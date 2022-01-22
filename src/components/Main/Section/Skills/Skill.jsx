@@ -1,16 +1,39 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo_right from "../../../../constants/logos/logo_right.svg";
 import logo_down from "../../../../constants/logos/logo_down.svg";
 import propTypes from "prop-types";
-import {
-  SkillsBulletPoint,
-  Icon,
-  SkillsTitle,
-  SkillsList,
-  SkillsItem,
-} from "./styles";
+import { Icon, ListItem, BulletPointList, BulletPoint, Title } from "./styles";
 
 export const Skill = ({ title, items }) => {
+  /* check window width
+  const [width, setWidth] = useState(window.innerWidth);
+
+  const updateDimensions = () => {
+    setWidth(window.innerWidth);
+  };
+
+  useEffect(() => {
+    window.addEventListener("resize", updateDimensions);
+    return () => window.removeEventListener("resize", updateDimensions);
+  }, []);
+
+  if (width > 767) {
+    // do desktop stuff
+  } */
+
+  /* slider functionality
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const updateIndex = (newIndex) => {
+    if (newIndex < 0) {
+      newIndex = 0;
+    } else if (newIndex >= React.Children.count(items)) {
+      newIndex = React.Children.count(items) - 1;
+    }
+    setActiveIndex(newIndex);
+  };
+  end slider functionality */
+
   const [visible, setVisible] = useState(false);
 
   const onClick = () => {
@@ -20,16 +43,16 @@ export const Skill = ({ title, items }) => {
   const icon = visible ? logo_down : logo_right;
 
   return (
-    <SkillsBulletPoint onClick={onClick}>
+    <BulletPoint onClick={onClick}>
       <Icon src={icon} />
-      <SkillsTitle visible={visible}>{title}</SkillsTitle>
-      <SkillsList visible={visible}>
+      <Title visible={visible}>{title}</Title>
+      <BulletPointList visible={visible}>
         {items.length &&
           items.map((item) => {
-            return <SkillsItem>{item}</SkillsItem>;
+            return <ListItem>{item}</ListItem>;
           })}
-      </SkillsList>
-    </SkillsBulletPoint>
+      </BulletPointList>
+    </BulletPoint>
   );
 };
 

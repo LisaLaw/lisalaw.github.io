@@ -4,54 +4,38 @@ import { screenSize, colors } from "../../../../constants/constants";
 const SkillsWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+  margin-top: 5px;
 `;
 
-const SkillsBulletPoint = styled.div`
+const BulletPoint = styled.div`
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 2px 0;
-  margin-bottom: 10px;
+  margin: 15px 0;
 `;
 
 const Icon = styled.img`
-  margin: 2px 5px 2px 2px;
-
-  :hover {
-    cursor: pointer;
-  }
+  margin-right: 15px;
 `;
 
-const SkillsTitle = styled.div`
-  color: ${({ visible }) =>
-    visible ? colors.themeColor : colors.grayColor.medium};
-
-    :hover {
-      color: ${colors.grayColor.dark};
-      cursor: pointer;
-    }
-  }
+const Title = styled.div`
+  width: 80%;
+  text-align: left;
+  color: colors.grayColor.medium;
 `;
 
-const SkillsList = styled.div`
-  display: ${({ visible }) => (visible ? `flex` : `none`)};
-  margin: 10px 20px 0 20px;
-  flex-wrap: wrap;
+const BulletPointList = styled.div`
+  display: ${({ visible }) => (visible ? `grid` : `none`)};
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 20px;
+  row-gap: 8px;
   width: 100%;
+  word-wrap: break-word;
+  margin-top: 5px;
 `;
 
-const SkillsItem = styled.div`
-  width: 100%;
-  margin: 6px 3px;
-  flex: 1 0 30%;
+const ListItem = styled.div`
+  color: ${colors.grayColor.medium};
 `;
 
-export {
-  SkillsWrapper,
-  SkillsBulletPoint,
-  Icon,
-  SkillsTitle,
-  SkillsList,
-  SkillsItem,
-};
+export { SkillsWrapper, BulletPoint, Icon, Title, BulletPointList, ListItem };
