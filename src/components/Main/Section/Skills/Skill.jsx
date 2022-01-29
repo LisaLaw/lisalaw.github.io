@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
-import logo_right from "../../../../constants/logos/logo_right.svg";
-import logo_down from "../../../../constants/logos/logo_down.svg";
+import React, { useEffect } from "react";
 import propTypes from "prop-types";
-import { Icon, ListItem, BulletPointList, BulletPoint, Title } from "./styles";
+import { Icon, BulletPoint, Title } from "./styles";
+import { BPContent } from "../BulletPoint/BPContent";
 
 export const Skill = ({ title, items }) => {
   /* check window width
@@ -34,26 +33,7 @@ export const Skill = ({ title, items }) => {
   };
   end slider functionality */
 
-  const [visible, setVisible] = useState(false);
-
-  const onClick = () => {
-    setVisible((prevState) => !prevState);
-  };
-
-  const icon = visible ? logo_down : logo_right;
-
-  return (
-    <BulletPoint onClick={onClick}>
-      <Icon src={icon} />
-      <Title visible={visible}>{title}</Title>
-      <BulletPointList visible={visible}>
-        {items.length &&
-          items.map((item) => {
-            return <ListItem>{item}</ListItem>;
-          })}
-      </BulletPointList>
-    </BulletPoint>
-  );
+  return <p>Configuring...</p>;
 };
 
 Skill.propTypes = {

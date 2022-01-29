@@ -8,8 +8,16 @@ export const Main = () => {
     <StyledMain>
       {navbarItems.length &&
         navbarItems.map((item) => {
+          const { label, type, key, isSlider, hasOnlyOneItem } = item;
           return (
-            item.type === "link" && <Section key={item.id} title={item.label} />
+            type === "link" && (
+              <Section
+                title={label}
+                key={key}
+                isSlider={isSlider}
+                hasOnlyOneItem={hasOnlyOneItem}
+              />
+            )
           );
         })}
     </StyledMain>
