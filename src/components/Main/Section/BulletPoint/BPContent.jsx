@@ -1,21 +1,18 @@
 import React from "react";
 import { ContentGrid } from "../ContentGrid/ContentGrid";
 import { Slider } from "../Slider/Slider";
-import { StyledBPContent } from "./styles";
-
-// how to get bullet content?
 
 const BPContent = ({ data, ...props }) => {
   const { isSlider } = data;
 
   return (
-    <StyledBPContent>
+    <div>
       {isSlider ? (
         <Slider visible={props.visible} data={data} />
       ) : (
         <ContentGrid visible={props.visible} data={data} />
       )}
-    </StyledBPContent>
+    </div>
   );
 };
 

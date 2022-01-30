@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import logo_right from "../../../../constants/logos/logo_right.svg";
 import logo_down from "../../../../constants/logos/logo_down.svg";
-import { BulletPoint, Icon, Title } from "../Skills/styles";
+import { BulletPoint, Icon, Title } from "./styles";
 import { BPContent } from "./BPContent";
 
 const BP = ({ data }) => {

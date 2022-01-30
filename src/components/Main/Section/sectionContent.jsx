@@ -1,15 +1,14 @@
 import React from "react";
 import { BP } from "./BulletPoint/BP";
-import { StyledSection } from "./styles";
 
 const SectionContent = ({ data }) => {
   return (
-    <StyledSection>
+    <div>
       {data.map((object) => {
         const { content, hasNoBulletPoints } = object;
         return hasNoBulletPoints ? <p>{content}</p> : <BP data={object} />;
       })}
-    </StyledSection>
+    </div>
   );
 };
 
