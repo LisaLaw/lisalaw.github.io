@@ -8,7 +8,6 @@ import { StyledBPContent } from "./styles";
 const BPContent = ({ data, ...props }) => {
   const { isSlider } = data;
 
-  console.log("BPContent data is ", data);
   return (
     <StyledBPContent>
       {isSlider ? (

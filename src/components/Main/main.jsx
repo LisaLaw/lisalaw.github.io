@@ -7,18 +7,9 @@ export const Main = () => {
   return (
     <StyledMain>
       {navbarItems.length &&
-        navbarItems.map((item) => {
-          const { label, type, key, isSlider, hasOnlyOneItem } = item;
-          return (
-            type === "link" && (
-              <Section
-                title={label}
-                key={key}
-                isSlider={isSlider}
-                hasOnlyOneItem={hasOnlyOneItem}
-              />
-            )
-          );
+        navbarItems.map((item, index) => {
+          const { label, type } = item;
+          return type === "link" && <Section title={label} key={index} />;
         })}
     </StyledMain>
   );

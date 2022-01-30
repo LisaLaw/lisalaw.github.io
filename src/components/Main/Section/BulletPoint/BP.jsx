@@ -5,22 +5,18 @@ import { BulletPoint, Icon, Title } from "../Skills/styles";
 import { BPContent } from "./BPContent";
 
 const BP = ({ data }) => {
-  const { title } = data;
+  const { title, content } = data;
   const [visible, setVisible] = useState(false);
-
   const onClick = () => {
     setVisible((prevState) => !prevState);
   };
-
   const icon = visible ? logo_down : logo_right;
-
-  console.log("BP data is ", data);
 
   return (
     <BulletPoint onClick={onClick}>
       <Icon src={icon} />
-      <Title visible={visible}>{title}</Title>
-      <BPContent data={data} visible={visible} />
+      <Title>{title}</Title>
+      <BPContent data={content} visible={visible} />
     </BulletPoint>
   );
 };
