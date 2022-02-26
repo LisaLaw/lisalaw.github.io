@@ -18,21 +18,22 @@ const StyledSection = styled.div`
 
   /* keep page from jumping on hover*/
   border: 1px solid transparent;
+  @media (min-width: ${screenSize.mobile}) {
+    /**keep page from jumping on click */
+    height: 170px; /** fix this when content is complete */
 
-  /**keep page from jumping on click */
-  height: 170px; /** fix this when content is complete */
+    /**fix sections in grid design */
+    &.skills-section {
+      grid-area: skills-section;
+    }
 
-  /**fix sections in grid design */
-  &.skills-section {
-    grid-area: skills-section;
-  }
+    &.projects-section {
+      grid-area: projects-section;
+    }
 
-  &.projects-section {
-    grid-area: projects-section;
-  }
-
-  &.about-section {
-    grid-area: about-section;
+    &.about-section {
+      grid-area: about-section;
+    }
   }
 `;
 

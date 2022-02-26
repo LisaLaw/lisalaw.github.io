@@ -8,6 +8,7 @@ const StyledNavbar = styled.div`
   color: ${colors.grayColor.dark};
   border-bottom: 1px solid ${colors.grayColor.extraLight};
   flex-wrap: wrap;
+  margin: 0 3px;
 
   & a {
     text-decoration: none;
@@ -53,6 +54,7 @@ const StyledNavLinks = styled.ul`
   width: 100%;
   height: ${({ display }) => !display && `0px`};
   padding: 0px;
+  margin: 5px 0 0 0;
 
   @media (min-width: ${screenSize.mobile}) {
     display: flex;
@@ -63,7 +65,7 @@ const StyledNavLinks = styled.ul`
     height: unset;
     width: unset;
     flex-grow: 0;
-    margin-right: 10px;
+    margin: 15px 10px 15px 0;
   }
 `;
 
