@@ -9,8 +9,17 @@ export const Main = () => {
       {navbarItems.length &&
         navbarItems.map((item, index) => {
           const { label, type } = item;
-          return type === "link" && <Section title={label} key={index} />;
+          return (
+            type === "link" && (
+              <Section
+                title={label}
+                className={`${label.toLowerCase()}-section`}
+                key={index}
+              />
+            )
+          );
         })}
+      <div className="background" />
     </StyledMain>
   );
 };

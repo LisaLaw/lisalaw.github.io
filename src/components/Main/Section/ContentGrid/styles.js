@@ -6,7 +6,6 @@ const StyledContentGrid = styled.div`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 10px;
   row-gap: 8px;
-  width: 100%;
   word-wrap: break-word;
   margin-top: 5px;
 `;

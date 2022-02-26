@@ -5,6 +5,10 @@ const BulletPoint = styled.div`
   flex-wrap: wrap;
   align-items: center;
   margin: 15px 0;
+
+  /* keep card from jumping left*/
+  border: 1px solid transparent;
+  padding: 1px;
 `;
 
 const Icon = styled.img`
