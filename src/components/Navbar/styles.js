@@ -118,17 +118,19 @@ const StyledNavbarButton = styled.button`
   font: inherit;
 
   @media (min-width: ${screenSize.mobile}) {
-      border-radius: 6px;
-      border: 1px solid ${colors.grayColor.extraLight};
-      box-shadow: 1px 3px 3px ${colors.shadows.sidebarShadow.retracted};
-      color: {colors.grayColor.dark};
-      padding: 7px 10px;
-      cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid ${colors.grayColor.extraLight};
+    box-shadow: 1px 3px 3px ${colors.shadows.sidebarShadow.retracted};
+    color: {colors.grayColor.dark};
+    padding: 7px 10px;
+    cursor: pointer;
 
-      :hover {
-          border: 1px solid ${colors.grayColor.light};
+    :hover {
+      border: 1px solid ${colors.grayColor.light};
       box-shadow: 1px 3px 3px ${colors.shadows.sidebarShadow.extended};
-      }
+      /**stop navbar from jumping on button hover */
+      padding-top: 5px;
+    }
   }
 `;
 

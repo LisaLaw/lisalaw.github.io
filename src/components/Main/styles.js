@@ -2,11 +2,11 @@ import styled from "styled-components";
 import logo from "../../constants/logos/logo_big.svg";
 
 const StyledMain = styled.div`
-  width: 90%;
+  width: 95%;
+  margin-left: 20px;
   align-self: center;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
     "about-section . ."
     ". background projects-section"
@@ -18,7 +18,6 @@ const StyledMain = styled.div`
     background-repeat: no-repeat;
     background-position: center;
     grid-area: background;
-    border: 1px dashed blue;
   }
 `;
 
