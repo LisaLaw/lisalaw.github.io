@@ -27,6 +27,19 @@ const StyledSection = styled.div`
     box-shadow: 2.5px 5px 5px ${colors.shadows.sectionShadow.focused};
     border: 1px solid ${colors.grayColor.extraLight};
   }
+
+  &.skills-section {
+    grid-area: skills-section;
+  }
+
+  &.projects-section {
+    grid-area: projects-section;
+    border: 1px dashed green;
+  }
+
+  &.about-section {
+    grid-area: about-section;
+  }
 `;
 
 export { StyledSection };
