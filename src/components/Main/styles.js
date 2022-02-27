@@ -15,7 +15,6 @@ const StyledMain = styled.div`
       "about-section . ."
       ". background projects-section"
       ". skills-section .";
-    border: 1px dashed gray;
     margin-left: 20px;
 
     & .background {

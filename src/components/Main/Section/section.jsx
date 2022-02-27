@@ -7,7 +7,7 @@ export const Section = ({ title, className }) => {
   // check isSlider functionality
   return (
     <StyledSection className={className}>
-      {title}
+      {title !== "About" && title}
       {title === "About" && <SectionContent data={about} hasNoBulletPoints />}
       {title === "Projects" && <SectionContent data={projects} isSlider />}
       {title === "Skills" && <SectionContent data={skills} />}
