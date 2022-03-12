@@ -17,12 +17,12 @@ export const Navbar = () => {
     window.location.href = "lisalaw.github.io/src/constants/CV.pdf";
   }; /*check when version 2 is running*/
 
-  const [displayed, setDisplayed] = useState(false);
+  const [visible, setVisible] = useState(false);
   const toggleMenu = () => {
-    setDisplayed((prevState) => !prevState);
+    setVisible((prevState) => !prevState);
   };
 
-  const menuIcon = displayed ? cross : burger;
+  const menuIcon = visible ? cross : burger;
 
   return (
     <StyledNavbar>
@@ -33,16 +33,16 @@ export const Navbar = () => {
       <Icon src={menuIcon} onClick={() => toggleMenu()} />
 
       {navbarItems.length && (
-        <StyledNavLinks display={displayed}>
-          {navbarItems.map((item) => {
+        <StyledNavLinks visible={visible}>
+          {navbarItems.map((item, index) => {
             return item.type === "button" ? (
-              <ListItem display={displayed} key={item.key}>
+              <ListItem visible={visible} key={index}>
                 <StyledNavbarButton onClick={() => downloadCV()}>
                   {item.label}
                 </StyledNavbarButton>
               </ListItem>
             ) : (
-              <ListItem display={displayed} key={item.key}>
+              <ListItem visible={visible} key={index}>
                 <a href={item.url}>{item.label}</a>
               </ListItem>
             );

@@ -50,9 +50,9 @@ const StyledNavLinks = styled.ul`
   align-items: center;
   flex-direction: column;
   justify-content: stretch;
-  flex-grow: ${({ display }) => (display ? 2 : 0)};
+  flex-grow: ${({ visible }) => (visible ? 2 : 0)};
   width: 100%;
-  height: ${({ display }) => !display && `0px`};
+  height: ${({ visible }) => !visible && `0px`};
   padding: 0px;
   margin: 5px 0 0 0;
 
@@ -71,7 +71,7 @@ const StyledNavLinks = styled.ul`
 
 const ListItem = styled.li`
   list-style: none;
-  display: ${({ display }) => (display ? `flex` : `none`)};
+  display: ${({ visible }) => (visible ? `flex` : `none`)};
   margin-bottom: 1px solid ${colors.grayColor.medium};
   height: 30px;
   align-items: center;
