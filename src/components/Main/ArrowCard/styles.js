@@ -25,6 +25,7 @@ const StyledArrowCard = styled.div`
     /**keep page from jumping on click */
     height: ${(props) => props.visible === false && `22px`};
     width: ${(props) => props.visible === false && `20px`};
+    width: ${(props) => props.priority && !props.visible && `100px`};
     cursor: ${(props) => props.visible === false && `pointer`};
 
     /**fix sections in grid design */
@@ -59,7 +60,8 @@ const TopLine = styled.div`
 const Title = styled.div`
   width: 80%;
   @media (min-width: ${screenSize.mobile}) {
-    display: ${(props) => (props.visible ? `flex` : `none`)};
+    display: ${(props) => (props.priority || props.visible ? `flex` : `none`)};
+    text-decoration: ${(props) => props.visible && `underline`};
   }
 `;
 

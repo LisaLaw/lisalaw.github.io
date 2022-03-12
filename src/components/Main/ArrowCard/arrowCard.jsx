@@ -15,6 +15,7 @@ export const ArrowCard = ({ item }) => {
 
   const icon = visible ? logo_down : logo_right;
   const lowerCaseTitle = label.toLowerCase();
+  console.log(lowerCaseTitle);
 
   return (
     <StyledArrowCard
@@ -26,7 +27,9 @@ export const ArrowCard = ({ item }) => {
     >
       <TopLine>
         <Icon src={icon} />
-        <Title visible={visible}>{lowerCaseTitle}</Title>
+        <Title visible={visible} priority={priority}>
+          {lowerCaseTitle}
+        </Title>
       </TopLine>
       <Section title={lowerCaseTitle} visible={visible} />
     </StyledArrowCard>

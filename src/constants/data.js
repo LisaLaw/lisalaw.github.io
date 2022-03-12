@@ -20,6 +20,10 @@ const skills = [
 
 const presentations = [];
 
+const frontend = [];
+
+const backend = [];
+
 const about = [
   {
     title: "About",
@@ -57,4 +61,4 @@ const projects = [
   },
 ];
 
-export { skills, about, projects, presentations };
+export { skills, about, projects, presentations, backend, frontend };

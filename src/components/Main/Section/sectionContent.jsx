@@ -7,8 +7,6 @@ const SectionContent = ({ data }) => {
     <div>
       {data.map((object) => {
         const { content, hasNoBulletPoints } = object;
-
-        console.log("content is ", content);
         return hasNoBulletPoints ? (
           <StyledContent>
             {content.map((line, index) => (

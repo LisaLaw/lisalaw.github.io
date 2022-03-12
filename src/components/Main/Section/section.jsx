@@ -4,19 +4,20 @@ import { StyledSection } from "./styles";
 import {
   skills,
   about,
-  projects,
+  frontend,
+  backend,
   presentations,
 } from "../../../constants/data";
 
-export const Section = ({ title, className, visible }) => {
+export const Section = ({ title, visible }) => {
   // check isSlider functionality
   return (
-    <StyledSection className={className} visible={visible}>
-      {title === "About" && <SectionContent data={about} hasNoBulletPoints />}
-      {title === "Projects" && <SectionContent data={projects} isSlider />}
-      {title === "Skills" && <SectionContent data={skills} />}
-      {title === "Presentations" && <SectionContent data={presentations} />}
-      {title === ""}
+    <StyledSection visible={visible}>
+      {title === "about" && <SectionContent data={about} hasNoBulletPoints />}
+      {title === "frontend" && <SectionContent data={frontend} isSlider />}
+      {title === "backend" && <SectionContent data={backend} isSlider />}
+      {title === "skills" && <SectionContent data={skills} />}
+      {title === "presentations" && <SectionContent data={presentations} />}
     </StyledSection>
   );
 };

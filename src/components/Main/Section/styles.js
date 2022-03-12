@@ -4,6 +4,7 @@ import { screenSize, colors } from "../../../constants/constants";
 const StyledSection = styled.div`
   display: ${({ visible }) => (visible ? "flex" : "none")};
   flex-direction: column;
+  margin-top: 4px;
 `;
 
 const StyledContent = styled.div`
