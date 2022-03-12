@@ -1,21 +1,16 @@
 import React from "react";
 import { StyledMain } from "./styles";
 import { navbarItems } from "../../constants/navbarItems";
-import { Section } from "./Section/section";
+import { ArrowCard } from "./ArrowCard/arrowCard";
 
 export const Main = () => {
   return (
     <StyledMain>
       {navbarItems.length &&
         navbarItems.map((item, index) => {
-          const { label, type } = item;
           return (
-            type === "link" && (
-              <Section
-                title={label}
-                className={`${label.toLowerCase()}-section`}
-                key={index}
-              />
+            item.type === "link" && (
+              <ArrowCard className={`arrow${index}`} item={item} key={index} />
             )
           );
         })}

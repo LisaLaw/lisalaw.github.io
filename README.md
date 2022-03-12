@@ -68,3 +68,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `yarn build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+RUN SCRIPT:
+`npm start`
+
+
+TO DO:
+- check why tel link is displayed funnily
+- on click navbar item, display section big ("displayFull") --
+    what's the logic?
+- check sizes for section cards on big screen (different screen sizes)
+
+- proper arrows connecting elements (sections w background picture) - css draggable?
+
+- update design (see ideas below & current page) => get a basic design to work for, any updates => minor versions
+
+IDEAS:
+- projects: line with dots (similar to progress bar in CW)
+    + left to right?
+    + wave lines?
+- about: scrollable timeline top to bottom?
+- skills: singstar type slideshow?
+
+
+------------> !!!!!!!!!!!!!!!!!!!!
+- PULL DIFFERENT SKILLS IN SEPARATE COMPONENT?

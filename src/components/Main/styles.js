@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { screenSize } from "../../constants/constants";
+import { screenSize, colors } from "../../constants/constants";
 import logo from "../../constants/logos/logo_big.svg";
 
 const StyledMain = styled.div`
@@ -12,9 +12,9 @@ const StyledMain = styled.div`
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas:
-      "about-section . ."
-      ". background projects-section"
-      ". skills-section .";
+      "arrow1 arrow1 . . . ."
+      "arrow2 arrow2 background . arrow3 arrow3"
+      "arrow4 arrow4 . . arrow5 arrow5";
     margin-left: 20px;
 
     & .background {

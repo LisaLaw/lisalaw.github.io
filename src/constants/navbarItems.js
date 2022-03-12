@@ -5,14 +5,31 @@ const navbarItems = [
     type: "link",
   },
   {
-    label: "Projects",
-    url: "#projects",
+    label: "Frontend",
+    url: "#frontend",
+    type: "link",
+    priority: true,
+  },
+  {
+    label: "Backend",
+    url: "#backend",
+    type: "link",
+    priority: true,
+  },
+  {
+    label: "Presentations",
+    url: "#presentations",
     type: "link",
   },
   {
     label: "Skills",
     url: "#skills",
     type: "link",
+  },
+  {
+    label: "Blog",
+    url: "",
+    type: "button",
   },
   {
     label: "Download CV",
