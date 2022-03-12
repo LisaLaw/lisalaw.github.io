@@ -18,6 +18,8 @@ const skills = [
   },
 ];
 
+const presentations = [];
+
 const about = [
   {
     title: "About",
@@ -55,4 +57,4 @@ const projects = [
   },
 ];
 
-export { skills, about, projects };
+export { skills, about, projects, presentations };

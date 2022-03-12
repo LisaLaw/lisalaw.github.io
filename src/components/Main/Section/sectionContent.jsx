@@ -7,10 +7,12 @@ const SectionContent = ({ data }) => {
     <div>
       {data.map((object) => {
         const { content, hasNoBulletPoints } = object;
+
+        console.log("content is ", content);
         return hasNoBulletPoints ? (
           <StyledContent>
-            {content.map((line) => (
-              <StyledContentLine>{line}</StyledContentLine>
+            {content.map((line, index) => (
+              <StyledContentLine key={index}>{line}</StyledContentLine>
             ))}
           </StyledContent>
         ) : (

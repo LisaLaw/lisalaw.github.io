@@ -8,11 +8,7 @@ export const Main = () => {
     <StyledMain>
       {navbarItems.length &&
         navbarItems.map((item, index) => {
-          return (
-            item.type === "link" && (
-              <ArrowCard className={`arrow${index}`} item={item} key={index} />
-            )
-          );
+          return item.type === "link" && <ArrowCard item={item} key={index} />;
         })}
       <div className="background" />
     </StyledMain>

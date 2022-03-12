@@ -10,12 +10,19 @@ const StyledMain = styled.div`
 
   @media (min-width: ${screenSize.mobile}) {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 30px minmax(180px, 1fr) minmax(180px, 1fr) minmax(
+        180px,
+        1fr
+      );
     grid-template-areas:
-      "arrow1 arrow1 . . . ."
-      "arrow2 arrow2 background . arrow3 arrow3"
-      "arrow4 arrow4 . . arrow5 arrow5";
+      ". . . ."
+      "about-section . frontend-section ."
+      "backend-section background background skills-section"
+      ". presentations-section . .";
     margin-left: 20px;
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
 
     & .background {
       background-image: url(${logo});
