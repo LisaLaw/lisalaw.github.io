@@ -30,13 +30,7 @@ export const Navbar = () => {
       {navbarItems.length && (
         <NavbarItems visible={visible}>
           {navbarItems.map((item, index) => {
-            return item.type === "button" ? (
-              <NavbarItem visible={visible} key={index}>
-                <NavbarButton onClick={() => downloadCV()}>
-                  {item.label}
-                </NavbarButton>
-              </NavbarItem>
-            ) : (
+            return (
               <NavbarItem visible={visible} key={index}>
                 <a href={item.url}>{item.label}</a>
               </NavbarItem>
