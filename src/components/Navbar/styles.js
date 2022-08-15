@@ -21,16 +21,12 @@ const StyledNavbar = styled.div`
   }
 `;
 
-const StyledLogoLink = styled.a`
+const StyledLogo = styled.a`
   display: flex;
   line-height: 1.5;
   font-variant: small-caps;
   font-size: 20px;
-
-  & img {
-    align-self: center;
-    padding-bottom: 1px;
-  }
+  padding-right: 20px !important;
 
   @media (min-width: ${screenSize.mobile}) {
     border-right: 1.5px solid ${colors.grayColor.dark};
@@ -46,7 +42,7 @@ const Icon = styled.img`
   }
 `;
 
-const StyledNavLinks = styled.ul`
+const NavbarItems = styled.ul`
   align-items: center;
   flex-direction: column;
   justify-content: stretch;
@@ -69,7 +65,7 @@ const StyledNavLinks = styled.ul`
   }
 `;
 
-const ListItem = styled.li`
+const NavbarItem = styled.li`
   list-style: none;
   display: ${({ visible }) => (visible ? `flex` : `none`)};
   margin-bottom: 1px solid ${colors.grayColor.medium};
@@ -101,19 +97,12 @@ const ListItem = styled.li`
     }
 
     :hover {
-      border-bottom: 1px solid ${colors.grayColor.medium};
       padding-bottom: 2px;
-      border-radius: 1px;
-    }
-
-    &:last-child:hover {
-      border-bottom: none;
-      padding-bottom: none;
     }
   }
 `;
 
-const StyledNavbarButton = styled.button`
+const NavbarButton = styled.button`
   background-color: transparent;
   border: none;
   text-transform: inherit;
@@ -138,9 +127,9 @@ const StyledNavbarButton = styled.button`
 
 export {
   StyledNavbar,
-  StyledLogoLink,
-  StyledNavLinks,
+  StyledLogo,
+  NavbarItems,
   Icon,
-  ListItem,
-  StyledNavbarButton,
+  NavbarItem,
+  NavbarButton,
 };

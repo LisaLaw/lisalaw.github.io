@@ -1,15 +1,14 @@
 import { useState } from "react";
-import logo from "../../constants/logos/logo_small.svg"; // check imports, different file? -> CW project
 import { navbarItems } from "../../constants/navbarItems";
 import burger from "../../constants/logos/burger_menu.svg";
 import cross from "../../constants/logos/cross.svg";
 import {
   StyledNavbar,
-  StyledLogoLink,
-  StyledNavLinks,
+  StyledLogo,
+  NavbarItems,
   Icon,
-  ListItem,
-  StyledNavbarButton,
+  NavbarItem,
+  NavbarButton,
 } from "./styles";
 
 export const Navbar = () => {
@@ -26,28 +25,24 @@ export const Navbar = () => {
 
   return (
     <StyledNavbar>
-      <StyledLogoLink href="#home">
-        Lisa Law
-        <img src={logo} alt="test" />
-      </StyledLogoLink>
-      <Icon src={menuIcon} onClick={() => toggleMenu()} />
-
+      <StyledLogo href="#home">Lisa Law</StyledLogo>
+      <Icon src={menuIcon} onClick={() => toggleMenu()} /> {/* for mobile **/}
       {navbarItems.length && (
-        <StyledNavLinks visible={visible}>
+        <NavbarItems visible={visible}>
           {navbarItems.map((item, index) => {
             return item.type === "button" ? (
-              <ListItem visible={visible} key={index}>
-                <StyledNavbarButton onClick={() => downloadCV()}>
+              <NavbarItem visible={visible} key={index}>
+                <NavbarButton onClick={() => downloadCV()}>
                   {item.label}
-                </StyledNavbarButton>
-              </ListItem>
+                </NavbarButton>
+              </NavbarItem>
             ) : (
-              <ListItem visible={visible} key={index}>
+              <NavbarItem visible={visible} key={index}>
                 <a href={item.url}>{item.label}</a>
-              </ListItem>
+              </NavbarItem>
             );
           })}
-        </StyledNavLinks>
+        </NavbarItems>
       )}
     </StyledNavbar>
   );

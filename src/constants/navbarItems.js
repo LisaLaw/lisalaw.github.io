@@ -1,5 +1,20 @@
 const navbarItems = [
   {
+    label: "CV",
+    url: "",
+    type: "button",
+  },
+  {
+    label: "Tech Stack",
+    url: "#stack",
+    type: "link",
+  },
+  {
+    label: "Skills",
+    url: "#skills",
+    type: "link",
+  },
+  {
     label: "About",
     url: "#about",
     type: "link",
@@ -15,26 +30,6 @@ const navbarItems = [
     url: "#backend",
     type: "link",
     priority: true,
-  },
-  {
-    label: "Presentations",
-    url: "#presentations",
-    type: "link",
-  },
-  {
-    label: "Skills",
-    url: "#skills",
-    type: "link",
-  },
-  {
-    label: "Blog",
-    url: "",
-    type: "button",
-  },
-  {
-    label: "Download CV",
-    url: "",
-    type: "button",
   },
 ];
 

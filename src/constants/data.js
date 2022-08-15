@@ -1,10 +1,11 @@
-const skills = [
+const stack = [
   {
     title: "Technical Skills",
     content: ["React", "Gatsby", "Django", "CircleCi", "Figma"],
-    isSlider: false,
-    hasNoBulletPoints: false,
   },
+];
+
+const skills = [
   {
     title: "Soft Skills",
     content: [
@@ -13,30 +14,20 @@ const skills = [
       "multilingual communication",
       "attention to detail",
     ],
-    isSlider: false,
-    hasNoBulletPoints: false,
   },
 ];
-
-const presentations = [];
-
-const frontend = [];
-
-const backend = [];
 
 const about = [
   {
     title: "About",
     content: [
       "Hi! I'm Lisa, welcome to my webpage.",
-      "Feel free to snoop around a bit!",
+      "Feel free to have a look around.",
       "Three facts about me:",
       "I have lived in the US, the UK, Germany and Spain.",
       "I am a self-taught programmer since 2021.",
-      "I am a passionate martial artist.",
+      "I love martial arts, dogs and coffee.",
     ],
-    isSlider: false,
-    hasNoBulletPoints: true,
   },
 ];
 
@@ -44,21 +35,11 @@ const projects = [
   {
     title: "frontend",
     content: ["first project", "second project", "third project"],
-    isSlider: true,
-    hasNoBulletPoints: false,
   },
   {
     title: "backend",
     content: ["first BE", "second BE"],
   },
-  {
-    title: "presentations",
-    content: ["first presentation", "summary??"],
-  },
-  {
-    title: "blog posts",
-    content: ["some link?"],
-  },
 ];
 
-export { skills, about, projects, presentations, backend, frontend };
+export { skills, about, projects, stack };
