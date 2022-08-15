@@ -8,10 +8,14 @@ export const StyledSection = styled.div`
     props.open
       ? `1px 1px 3px ${colors.shadows.sectionShadow.focused}`
       : `none`};
+  border: ${(props) =>
+    props.open ? "none" : `0.5px solid ${colors.grayColor.light}`};
   padding: 20px;
   margin-top: 20px;
-  transition: 0.3s;
-  background-color: ${(props) => (props.open ? "#fff" : colors.grayColor.extraLight)};
+
+  &:hover {
+    cursor: pointer;
+  }
 `;
 
 export const Content = styled.p`
@@ -22,10 +26,6 @@ export const Content = styled.p`
 
 export const Title = styled.h3`
   color: ${colors.themeColor};
-
-  &:hover {
-    cursor: pointer;
-  }
 `;
 
 export const BulletPoint = styled.p`

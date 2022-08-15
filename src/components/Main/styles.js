@@ -13,8 +13,8 @@ const StyledMain = styled.div`
     grid-template-rows: repeat(2, 1fr);
     height: 80vh;
     grid-template-areas:
-      "a a"
-      "a";
+      ". ."
+      ".";
     margin-left: 20px;
     grid-column-gap: 8px;
     grid-row-gap: 8px;
