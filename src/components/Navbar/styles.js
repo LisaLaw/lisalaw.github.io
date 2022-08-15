@@ -4,10 +4,11 @@ import { screenSize, colors } from "../../constants/constants";
 const StyledNavbar = styled.div`
   display: flex;
   align-items: center;
+  align-self: center;
   justify-content: space-between;
   color: ${colors.grayColor.dark};
   border-bottom: 1px solid ${colors.grayColor.extraLight};
-  flex-wrap: wrap;
+  width: 90%;
   margin: 0 3px;
 
   & a {
@@ -26,86 +27,32 @@ const StyledLogo = styled.a`
   line-height: 1.5;
   font-variant: small-caps;
   font-size: 20px;
-  padding-right: 20px !important;
-
-  @media (min-width: ${screenSize.mobile}) {
-    border-right: 1.5px solid ${colors.grayColor.dark};
-  }
-`;
-
-const Icon = styled.img`
-  height: 20px;
-  width: 23px;
-
-  @media (min-width: ${screenSize.mobile}) {
-    display: none;
-  }
 `;
 
 const NavbarItems = styled.ul`
+  display: flex;
   align-items: center;
-  flex-direction: column;
   justify-content: stretch;
-  flex-grow: ${({ visible }) => (visible ? 2 : 0)};
-  width: 100%;
-  height: ${({ visible }) => !visible && `0px`};
   padding: 0px;
   margin: 5px 0 0 0;
 
   @media (min-width: ${screenSize.mobile}) {
-    display: flex;
-    flex-direction: row;
     align-items: space-around;
     align-self: flex-end;
     background: none;
-    height: unset;
-    width: unset;
-    flex-grow: 0;
     margin: 15px 10px 15px 0;
   }
 `;
 
 const NavbarItem = styled.li`
   list-style: none;
-  display: ${({ visible }) => (visible ? `flex` : `none`)};
-  margin-bottom: 1px solid ${colors.grayColor.medium};
-  height: 30px;
+  display: flex;
   align-items: center;
-  text-transform: uppercase;
   padding: 5px 10px;
 
-  &:nth-child(odd) {
-    background-color: ${colors.grayColor.light};
-  }
-
-  &:nth-child(even) {
-    background-color: ${colors.grayColor.extraLight};
-  }
-
   @media (min-width: ${screenSize.mobile}) {
-    display: flex;
     padding: 0 7px;
-    height: unset;
-    text-transform: none;
-
-    &:nth-child(odd) {
-      background-color: transparent;
-    }
-
-    &:nth-child(even) {
-      background-color: transparent;
-    }
-
-    :hover {
-      padding-bottom: 2px;
-    }
   }
 `;
 
-export {
-  StyledNavbar,
-  StyledLogo,
-  NavbarItems,
-  Icon,
-  NavbarItem,
-};
+export { StyledNavbar, StyledLogo, NavbarItems, NavbarItem };

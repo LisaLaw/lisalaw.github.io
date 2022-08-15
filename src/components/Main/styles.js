@@ -3,7 +3,6 @@ import { screenSize } from "../../constants/constants";
 
 const StyledMain = styled.div`
   width: 90%;
-  height: 80vH;
   align-self: center;
   display: flex;
   flex-direction: column;
@@ -12,6 +11,7 @@ const StyledMain = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    height: 80vh;
     grid-template-areas:
       "a a"
       "a";

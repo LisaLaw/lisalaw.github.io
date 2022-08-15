@@ -10,9 +10,9 @@ export const data = [
   {
     title: "Soft Skills",
     content: {
-      "Leadership": "some text",
+      "Leadership": "Kanban master, project technical representative",
       "Languages": "German (native), English (native), Spanish (proficient), French (intermediate)",
-      "third skill": "some text",
+      "Communication": "Public Speaking (presentations), mediating between teams",
     },
   },
   {
@@ -21,14 +21,6 @@ export const data = [
       "Junior Software Developer": "CoverWallet, May 2021 - present",
       "Backend Intern": "DekaLabs, September 2020 - May 2021",
       "Other": "Project Manager, Secondary Language Teacher"
-    }
-  },
-  {
-    title: "Fun facts about me",
-    content: {
-      "Living": "I have lived in the US, the UK, Germany and Spain.",
-      "Passion": "I love martial arts, dogs and coffee. And food. Definitively food.",
-      "": "",
     }
   }
 ];
