@@ -18,9 +18,5 @@ export const colors = {
       unfocused: "rgb(138, 138, 138, 0.5)",
       focused: "rgb(138, 138, 138, 0.7)",
     },
-    sidebarShadow: {
-      retracted: "rgb(138, 138, 138, 0.3)",
-      extended: "rgb(138, 138, 138, 0.8)",
-    },
   },
 };

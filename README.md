@@ -76,14 +76,9 @@ RUN SCRIPT:
 
 
 TO DO:
-- check why tel link is displayed funnily
-- on click navbar item, display section big ("displayFull") --
-    what's the logic?
-- check sizes for section cards on big screen (different screen sizes)
-
-- proper arrows connecting elements (sections w background picture) - css draggable?
-
-- update design (see ideas below & current page) => get a basic design to work for, any updates => minor versions
+- 3 items per content. colorful span?
+- webpack default paths
+- default colors / margins for p and h
 
 IDEAS:
 - projects: line with dots (similar to progress bar in CW)

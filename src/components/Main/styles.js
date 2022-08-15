@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { screenSize } from "../../constants/constants";
 
 const StyledMain = styled.div`
-  width: 95%;
+  width: 90%;
   height: 80vH;
   align-self: center;
   display: flex;
