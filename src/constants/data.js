@@ -22,5 +22,12 @@ export const data = [
       "Backend Intern": "DekaLabs, September 2020 - May 2021",
       "Other": "Project Manager, Secondary Language Teacher"
     }
+  },
+  {
+    title: "Contact",
+    content: {
+      "Email": "lisacatlaw@gmail.com",
+      "Telephone": "0034 639 624 915",
+    }
   }
 ];

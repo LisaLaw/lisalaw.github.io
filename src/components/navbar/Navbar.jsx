@@ -1,30 +1,25 @@
-import { navbarItems } from "../../constants/navbarItems";
-import {
-  StyledNavbar,
-  StyledLogo,
-  NavbarItems,
-  NavbarItem,
-} from "./styles";
+import { StyledNavbar, StyledLogo, NavbarItems, NavbarItem } from "./styles";
 
 export const Navbar = () => {
-  const downloadCV = () => {
-    window.location.href = "lisalaw.github.io/src/constants/CV.pdf";
-  }; /*check when version 2 is running*/
-
   return (
     <StyledNavbar>
       <StyledLogo href="#home">Lisa Law</StyledLogo>
-      {navbarItems.length && (
-        <NavbarItems>
-          {navbarItems.map((item, index) => {
-            return (
-              <NavbarItem key={index}>
-                <a href={item.url}>{item.label}</a>
-              </NavbarItem>
-            );
-          })}
-        </NavbarItems>
-      )}
+      <NavbarItems>
+        <NavbarItem>
+          <a
+            href="/CV_Lisa_Law.pdf"
+            download="LisaLawCV.pdf"
+            target="_blank"
+          >
+            CV
+          </a>
+        </NavbarItem>
+        <NavbarItem>
+          <a href="https://github.com/LisaLaw" target="_blank">
+            GitHub
+          </a>
+        </NavbarItem>
+      </NavbarItems>
     </StyledNavbar>
   );
 };
