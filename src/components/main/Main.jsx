@@ -1,10 +1,15 @@
 import React from "react";
+import { data } from "../../constants/data";
+import { Section } from "./section/Section";
 import { StyledMain } from "./styles";
-import { navbarItems } from "../../constants/navbarItems";
 
 export const Main = () => {
   return (
-    <StyledMain> test
+    <StyledMain>
+      {data.length &&
+        data.map((item) => {
+          return <Section title={item.title} content={item.content} />;
+        })}
     </StyledMain>
   );
 };
