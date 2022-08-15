@@ -1,15 +1,15 @@
 import React from "react";
 import { data } from "../../constants/data";
 import { Section } from "./section/Section";
-import { StyledMain } from "./styles";
+import { Wrapper } from "./styles";
 
 export const Main = () => {
   return (
-    <StyledMain>
+    <Wrapper>
       {data.length &&
         data.map((item) => {
           return <Section title={item.title} content={item.content} />;
         })}
-    </StyledMain>
+    </Wrapper>
   );
 };

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { screenSize } from "../../constants/constants";
 
-const StyledMain = styled.div`
+const Wrapper = styled.div`
   width: 90%;
   align-self: center;
   display: flex;
@@ -21,4 +21,4 @@ const StyledMain = styled.div`
   }
 `;
 
-export { StyledMain };
+export { Wrapper };
